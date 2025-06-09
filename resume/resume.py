@@ -1,5 +1,5 @@
 # Define the path to the LaTeX file
-latex_file_path = "/Users/aaryas127/Documents/GitHub/resume_tweaker/core_resume.tex"
+latex_file_path = "/Users/aaryas127/Documents/GitHub/resume_tweaker/ds.tex"
 
 # Read the contents of the LaTeX file
 try:

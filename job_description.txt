@@ -1,0 +1,47 @@
+What are we looking for?
+
+BetterHelp is looking for a Data Science Extern to help us scale and increase our impact. You will use data to drive insight into the product and business with a focus. The ideal candidate would have experience analyzing large and complex data sets related to web products. You'll be doing plenty of experiment design and post-hoc analysis to support product improvements and business decisions.
+
+What will you do?
+
+Get insight from an enormous amount of data, and take a proactive role partnering with the product team in finding and testing data-driven ideas for improving our products.
+Collaborate with the product team and development team to design effective, statistically rigorous experiments, including simple A/B tests as well as more advanced experiment designs that account for complexities such as network effects.
+Monitor and analyze several product tests with statistical rigor, present the data and insights to the team, and drive product decisions.
+Look at complex problems and come up with testable models and algorithms that have measurable business impact.
+Enjoy great teamwork, have lots of fun, and take pride in building a world-class product that makes a difference in people's lives.
+
+What will you NOT do?
+
+You will NOT worry about "runway", "cash left", or "how much time we have until the next round". We have the startup DNA but we're fully backed and funded, all the way to success.
+You will NOT be confined to your "job". You will get involved in product, marketing, business strategy, and almost everything we do.
+You will NOT be bogged down by office politics, ego, or bad attitude. Only positive, pleasure-to-work-with people are allowed here!
+You will NOT get yourself burned out. We work hard but we believe in maintaining a sustainable work/life balance. Really.
+
+Can I work remotely?
+
+Yes. We operate on PST and candidates in any time zone are welcome to apply.
+
+Requirements
+
+Recently completed or currently pursuing a degree in a quantitative discipline such as Statistics, Math, Economics, Computer Science, Operations Research, or Engineering
+Experience with SQL
+Basic knowledge of tools like R or Python for data analysis
+Some experience or coursework in data analysis, experiment design, A/B testing, and statistical methods
+Strong understanding of statistical concepts, particularly related to hypothesis testing and experiment design
+Excellent communication skills, with a willingness to learn how to present complex ideas in a clear and accessible manner
+
+Bonus (Great To Have But Not Required)
+
+Familiarity with analyzing A/B tests or similar experiments through coursework or projects.
+Interest in B2C or marketplace products.
+Experience with data visualization tools like Tableau or Looker.
+
+Benefits
+
+The chance to build something that changes lives – and that people love
+An awesome community of co-workers
+Meaningful projects: Apply your education to real-world challenges through hands-on, impactful work that is both rigorous and rewarding.
+Growth & development: Expand your skills through mentoring, job shadowing, lunch & learns, and hands-on project work that supports your personal and professional growth.
+Dedicated support: Benefit from a manager and mentor who will provide ongoing guidance and support throughout your internship.
+
+The hourly rate for this position is $50 - $60 per hour.

@@ -6,6 +6,10 @@ with open(os.path.join(os.path.dirname(__file__), '../keys.txt'), 'r') as f:
     lines = [line.strip() for line in f if line.strip() and not line.startswith('#')]
 api_key = lines[2] if len(lines) > 2 else None
 
+# Read the LaTeX resume code
+with open(os.path.join(os.path.dirname(__file__), '../resume/core_resume.tex'), 'r') as f:
+    resume_latex = f.read()
+
 client = OpenAI(
   base_url = "https://integrate.api.nvidia.com/v1",
   api_key = api_key
@@ -13,7 +17,7 @@ client = OpenAI(
 
 completion = client.chat.completions.create(
   model="deepseek-ai/deepseek-r1",
-  messages=[{"role":"user","content":"What are the key components of a resume? Please provide a detailed breakdown of each section, including the purpose and content typically included in each part."}],
+  messages=[{"role":"user","content":f"What are the key components of this resume? The user will provide a resume in latex. Please outline key technologies used, as well as core strengths.\n\nResume LaTeX code:\n{resume_latex}"}],
   temperature=0.6,
   top_p=0.7,
   max_tokens=4096,
