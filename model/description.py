@@ -1,5 +1,6 @@
 from openai import OpenAI
 import os
+import json
 
 def get_job_description():
     import tkinter as tk
@@ -68,8 +69,30 @@ for chunk in completion_company_research:
         company_research_output += chunk.choices[0].delta.content
 results["company_research"] = company_research_output
 
+# Third output: Position title and closest match
+completion_position_title = client_1.chat.completions.create(
+    model="nvidia/llama-3.1-nemotron-nano-vl-8b-v1",
+    messages=[{"role": "user", "content": "which one of the following is the job title the closest to? Data Science, Data Engineering, Data Science+Engineering, Machine Learning Engineering or Software Engineer? Give me an answer from the options without an explanation. " + job_description}],
+    temperature=1.00,
+    top_p=0.01,
+    max_tokens=256,
+    stream=True
+)
+
+position_title_output = ""
+for chunk in completion_position_title:
+    if chunk.choices[0].delta.content is not None:
+        position_title_output += chunk.choices[0].delta.content
+results["position_title_and_closest_match"] = position_title_output
+
+# Save results to JSON file (always overwrite)
+with open(os.path.join(os.path.dirname(__file__), 'results.json'), 'w') as f:
+    json.dump(results, f, indent=2)
+
 # Optionally print or use the results dictionary
 print("\nPrimary Technical Skills:")
 print(results["primary_technical_skills"])
 print("\n\nCompany Research:")
 print(results["company_research"])
+print("\nPosition Title and Closest Match:")
+print(results["position_title_and_closest_match"])

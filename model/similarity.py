@@ -2,16 +2,22 @@ from sentence_transformers import SentenceTransformer, util
 import numpy as np
 import os
 import re
-import pdfplumber
 import sys
 import tkinter as tk
 from tkinter import simpledialog
+import json
+from identifier import ResumeIdentifier
 
 model = SentenceTransformer("BAAI/bge-base-en-v1.5")
 
+# Use the ResumeIdentifier class to get the correct PDF file
+identifier = ResumeIdentifier()
+_, pdf_file = identifier.get_assets()
+pdf_path = os.path.join(os.path.dirname(__file__), f'../resume/{pdf_file}')
+
 # Read PDF resume and extract bullet points
 resume_points = []
-pdf_path = os.path.join(os.path.dirname(__file__), '../resume/core_resume.pdf')
+import pdfplumber
 with pdfplumber.open(pdf_path) as pdf:
     for page in pdf.pages:
         text = page.extract_text()
@@ -34,10 +40,12 @@ if not resume_points:
                     if line.strip():
                         resume_points.append(line.strip())
 
-# Instead of reading the job description, read the summary output from description.py
-summary_path = os.path.join(os.path.dirname(__file__), '../job_description.txt')
-with open(summary_path, 'r') as f:
-    job_summary = f.read().strip()
+# Read primary_technical_skills and company_research from results.json
+results_path = os.path.join(os.path.dirname(__file__), '../model/results.json')
+with open(results_path, 'r') as f:
+    results = json.load(f)
+
+job_summary = results.get("primary_technical_skills", "") + "\n" + results.get("company_research", "")
 
 # Step 1: Encode all texts
 resume_embeddings = model.encode(resume_points, convert_to_tensor=True)

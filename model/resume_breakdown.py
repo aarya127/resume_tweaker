@@ -1,4 +1,5 @@
 from openai import OpenAI
+from identifier import ResumeIdentifier
 import os
 
 # Read the third API key from keys.txt (for resume_breakdown)
@@ -6,8 +7,11 @@ with open(os.path.join(os.path.dirname(__file__), '../keys.txt'), 'r') as f:
     lines = [line.strip() for line in f if line.strip() and not line.startswith('#')]
 api_key = lines[2] if len(lines) > 2 else None
 
+identifier = ResumeIdentifier()
+txt_file, pdf_file = identifier.get_assets()
+
 # Read the LaTeX resume code
-with open(os.path.join(os.path.dirname(__file__), '../resume/core_resume.tex'), 'r') as f:
+with open(os.path.join(os.path.dirname(__file__), f'../resume/{txt_file}'), 'r') as f:
     resume_latex = f.read()
 
 client = OpenAI(
@@ -27,4 +31,6 @@ completion = client.chat.completions.create(
 for chunk in completion:
   if chunk.choices[0].delta.content is not None:
     print(chunk.choices[0].delta.content, end="")
+
+
 

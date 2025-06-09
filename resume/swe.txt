@@ -1,0 +1,252 @@
+%-------------------------
+% Resume in Latex
+% Author : Aarya Shah
+% Based off of: https://github.com/sb2nov/resume
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage[dvipsnames]{xcolor}
+\usepackage{tikz}
+\usepackage{fontawesome5}
+\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+\linespread{0.95}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+\begin{center}
+    \textbf{\Huge \scshape Aarya Shah} \\ \vspace{1pt}
+    \small{\faIcon{phone-square-alt}} 647-767-8243 $|$ 
+    \small\faIcon{envelope}\href{mailto:a268shah@uwaterloo.ca}{\underline{a268shah@uwaterloo.ca}} $|$ 
+    \small\faIcon{linkedin}\href{https://www.linkedin.com/in/AaryaShah127}{\underline{linkedin/aarya}} $|$ 
+    \small\faIcon{university} Study Term Completed: 4A
+\end{center}
+%
+%-----------PROGRAMMING SKILLS-----------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Languages}{: Python, SQL, R, Java, JavaScript, TypeScript, C/C++, C\#, HTML/CSS, Scala} \\
+     \textbf{Tools}{: Azure, GCP, AWS, Snowflake, Git, Kubernetes, Docker, Linux, PostgreSQL, MySQL, MongoDB} \\
+     \textbf{Frameworks}{: Flask, NodeJS, React, PyTorch, TensorFlow, Langchain, Kafka, Hadoop, Spark}
+    }}
+ \end{itemize}
+
+
+%-------------------------------------------
+      
+%-----------EDUCATION-----------
+\section{Education}
+
+      
+% -----------Multiple Positions Heading-----------
+%    \resumeSubSubheading
+%     {Software Engineer I}{Oct 2014 - Sep 2016}
+%     \resumeItemListStart
+%        \resumeItem{Apache Beam}
+%          {Apache Beam is a unified model for defining both batch and streaming data-parallel processing pipelines}
+%     \resumeItemListEnd
+%    \resumeSubHeadingListEnd
+%-------------------------------------------
+\resumeSubHeadingListStart
+    \resumeSubheading
+      {University of Waterloo}{September 2021 -- April 2026}
+      {Bachelor of Mathematics in Statistics \& Computer Science}{Waterloo, ON}
+      \resumeItemListStart
+        \resumeItem{\textbf{Relevant Coursework:} Neural Networks, Data Types \& Structures, Linear Models, Stochastic Processes}
+      \resumeItemListEnd
+\resumeSubHeadingListEnd
+
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Globys}{April 2025 - Present}
+      {Software Engineer Intern (Machine Learning)}{Seattle, WA}
+      \resumeItemListStart
+        \resumeItem{Integrated active training \& fine-tuning to \textbf{10+ multi-agent RAG LLMs} using Langchain/OpenAI embeddings}
+        \resumeItem{Utilized MongoDB indexing in \textbf{C\# REST APIs} to optimize backend \& reduce query latency by \textbf{70\%}}
+        \resumeItem{Conducted A/B testing to enhance experience using \textbf{React} to boost the carousel click-through rate by \textbf{20\%}}
+      \resumeItemListEnd   
+      
+    \resumeSubheading
+      {Health Canada}{September 2024 -- December 2024}
+      {Data Science Intern}{Toronto, ON}
+      \resumeItemListStart 
+        \resumeItem{Implemented an \textbf{NLP model} to assess query complexities saving hosting costs by \textbf{\$500,000+} in Databricks}
+        \resumeItem{Created \textbf{5+ deep learning} projects using \textbf{neural networks} (CNN/RNNs) for projects in image/text domains}
+        \resumeItem{Established time series models such as LSTM, Prophet \& XGBoost for forecasting projects with \textbf{97\%+ accuracy}}
+      \resumeItemListEnd
+      
+    \resumeSubheading
+      {IBM}{July 2023 -- August 2023}
+      {Software Engineer Intern (Machine Learning)}{New York, ON}
+      \resumeItemListStart 
+        \resumeItem{Conducted \textbf{prompt tuning \& prompt engineering} on watsonx \textbf{GEN AI} models to enhance human interaction}
+        \resumeItem{Developed file processors in \textbf{Git, C++ \& Docker} which improved RAG model performance for 10+ file types}
+        \resumeItem{Assessed design variations of pre-existing LLMs in fraud detection \& Q/A bots which \textbf{increased 3\% accuracy}}
+      \resumeItemListEnd
+      
+    \resumeSubheading
+      {RBC}{May 2023 -- August 2023}
+      {Data Engineer Intern}{Mississauga, ON}
+      \resumeItemListStart
+        \resumeItem{Identified various methods to transition data foundation from \textbf{DB2} to \textbf{Azure} to increase user flexibility}
+        \resumeItem{Accelerated data pipelines by validating 25+ data sources in \textbf{Data Lake, Kafka, Hadoop (Hive) \& SQL}}
+        \resumeItem{Deployed \textbf{20+ data pipelines (ETL) \& 10+ CI/CD workflows} to \textbf{Azure} using Python, Spark, SQL \& Git}
+      \resumeItemListEnd
+      
+    \resumeSubheading
+      {RBC}{May 2022 -- August 2022}
+      {Software Engineer Intern}{Mississauga, ON}
+      \resumeItemListStart
+        \resumeItem{Designed a caching layer with \textbf{PostgreSQL} optimizing load times reducing latency for \textbf{4,000,000+ users}}
+        \resumeItem{Built 25+ REST API and backend features using TypeScript and MongoDB serving 2 million requests a month}
+      \resumeItemListEnd   
+
+    \resumeSubheading
+      {UWAFT}{January 2022 -- April 2022}
+      {Software Engineer Intern}{Mississauga, ON}
+      \resumeItemListStart
+        \resumeItem{Managed the infotainment software application which received a \textbf{98\%} satisfaction rate amongst \textbf{1,000+ users}}
+        \resumeItem{Refactored back-end services using \textbf{Python}, optimizing API response times and enhancing backend scalability}
+      \resumeItemListEnd   
+      
+  \resumeSubHeadingListEnd
+
+
+%-----------PROJECTS-----------
+\section{Projects}
+    \resumeSubHeadingListStart
+
+        \resumeProjectHeading
+          {\textbf{Policy Q/A chatbot (10000+ users) \href{https://github.com/aarya127/RAG}{\small\faIcon{github}}} $|$ Python, Angular, Falcon-40b LLM, Langchain, HuggingFace}{}
+          \resumeItemListStart
+            \resumeItem{Applied RAG for Q/A chatbot with ability to give quotes, check insurance coverage, and give tailored advice}
+          \resumeItemListEnd
+
+        \resumeProjectHeading
+          {\textbf{Pharmaceutical (iOS) App (4000+ users) \href{https://github.com/aarya127/pharmapp}{\small\faIcon{github}}} $|$ Node.js, React, HTML/CSS, Python, AWS, Nvidia LLMs}{}
+          \resumeItemListStart
+            \resumeItem{Engineered robust app using ML to read prescriptions, check coverage, corresponding price and availability}
+          \resumeItemListEnd
+
+        \resumeProjectHeading
+          {\textbf{Tensorflow Development  \href{https://github.com/tensorflow/tensorflow}{\small\faIcon{github}}} $|$ C++, Python}{}
+          \resumeItemListStart
+            \resumeItem{Enhanced features such as compiling libtensorflowlite with SVE or restoring training capability for LiteRT models}
+          \resumeItemListEnd
+          
+          \resumeProjectHeading
+          {\textbf{Driver Drowsiness Detection (1500+ users)         \href{https://github.com/aarya127/driver_drowsiness}{\small\faIcon{github}}} $|$ Python, CNN, Computer Vision (OpenCV)}{}
+          \resumeItemListStart
+            \resumeItem{Constructed a system that processes pupil images \& attention span to detect drowsiness with correctness of \textbf{92\%}}
+          \resumeItemListEnd 
+          
+        \resumeProjectHeading
+          {\textbf{Flight Path Optimization
+          \href{https://github.com/aarya127/flight_optimization}{\small\faIcon{github}}} $|$ Python, SQL, PostgreSQL, Machine Learning}{}
+          \resumeItemListStart
+            \resumeItem{Built an optimization algorithm using unsupervised learning methods to find most fuel efficient flight path}
+          \resumeItemListEnd 
+
+    \resumeSubHeadingListEnd
+
+
+\end{document}

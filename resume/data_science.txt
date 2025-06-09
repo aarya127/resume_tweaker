@@ -161,8 +161,8 @@
       {Machine Learning Engineer Intern}{Seattle, WA}
       \resumeItemListStart
         \resumeItem{Integrated active training \& fine-tuning to \textbf{7+ multi-agent RAG LLMs} using Langchain/OpenAI embeddings}
-        \resumeItem{Managed \textbf{vision tranformers} models in \textbf{Python} to verify customer info with \textbf{98\%} satisfaction from \textbf{8+ clients}}
-        \resumeItem{Utilized CosmosDB (Azure) indexing in \textbf{C++ REST APIs} to optimize backend \& reduce query latency by \textbf{70\%}}
+        \resumeItem{Researched predictive models using Python (\textbf{pytorch}) for customer churn with \textbf{98\%} satisfaction from \textbf{8+ clients}}
+        \resumeItem{Utilized CosmosDB (Azure) indexing in \textbf{C\# REST APIs} to optimize backend \& reduce query latency by \textbf{70\%}}
       \resumeItemListEnd   
       
     \resumeSubheading
@@ -176,7 +176,7 @@
 
     \resumeSubheading
       {Gore Mutual Insurance}{January 2024 -- April 2024}
-      {Data Science \& Engineering Intern}{Cambridge, ON}
+      {Data Scientist Intern}{Cambridge, ON}
       \resumeItemListStart 
         \resumeItem{Implemented an \textbf{NLP model} to assess query complexities saving hosting costs by \textbf{\$500,000+} in Databricks}
         \resumeItem{Created \textbf{5+ deep learning} projects using \textbf{neural networks} (CNN/RNNs) for projects in image/text domains}
@@ -187,8 +187,8 @@
       {IBM}{July 2023 -- August 2023}
       {Machine Learning Engineer Intern}{New York, NY}
       \resumeItemListStart 
-        \resumeItem{Conducted \textbf{prompt tuning \& prompt engineering} on watsonx \textbf{GEN AI} models to enhance human interaction}
         \resumeItem{Developed file processors in \textbf{Git, C++ \& Docker} which improved RAG model performance for 10+ file types}
+        \resumeItem{Conducted \textbf{prompt tuning \& prompt engineering} on watsonx \textbf{GEN AI} models to enhance human interaction}
         \resumeItem{Assessed design variations of pre-existing LLMs in fraud detection \& Q/A bots which \textbf{increased 3\% accuracy}}
       \resumeItemListEnd
       
@@ -208,7 +208,7 @@
         \resumeItem{Designed a caching layer with \textbf{PostgreSQL} optimizing load times reducing latency for \textbf{4,000,000+ users}}
         \resumeItem{Designed \textbf{15+ Tableau \& PowerBI Dashboards} \& wrote \textbf{20+ SQL queries} to influence business decisions}
         \resumeItem{Performed \textbf{regression and logistic modeling} \& statistical analysis in \textbf{R, Python \& Excel} using macros/VBA}
-      \resumeItemListEnd  
+      \resumeItemListEnd   
       
       
   \resumeSubHeadingListEnd
