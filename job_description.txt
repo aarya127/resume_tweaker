@@ -1,61 +1,14 @@
-About Finfare Financial
-
-
-Finfare Financial offers a Next Generation Business Card program that redefines the future of modern finance. We combine working capital with an enterprise-grade AI/Machine learning solutions suite, empowering businesses to grow faster. Finfare Financial is dedicated to empowering Scaling and Middle Market businesses with market leading 1.5% cashback rebates, 30/60/90 day repayment options, bill payment, expense management integration and a Next Level+ Rewards program that delivers AI/Machine Learning solutions to support business growth.
-About the Role
-
-
-As an AI & Data Science Intern, you will play a vital role in advancing our analytics and machine learning capabilities. You’ll contribute to the development of data-driven solutions that power Finfare’s product suite, from predictive models to AI-enhanced agents and decision tools. This is a unique opportunity to work directly with experienced data scientists and engineers, gain exposure to real-world business problems and contribute meaningfully to projects that impact the company’s direction. If you're a curious, hands-on learner who thrives in a high-growth environment, this internship is for you.
-This is a part-time summer internship position (June – August 2025) with the possibility of extension based on performance and project needs. This internship requires M-F on-site availability in Irvine, CA from 9AM-2PM. Local candidates only.
-
-
+Requirements
+Software Engineering Intern-Ability to work at Verkada HQ during fall 2025 (September 8 start date)
+Actively pursuing a Bachelors degree in Computer Science (or similar degree plan) with a graduate date in early to mid 2026
+Proficient understanding of Swift and iOS SDK OR Kotlin and Android SDK, and a willingness to learn about both
+Experience writing multi-threaded, asynchronous code
+Experience working with backend server APIs
+Solid UI development and unit testing skills
+Thorough understanding of fundamental Computer Science concepts
+Excellent interpersonal skills and ability to work well alongside engineers of all levels
 Responsibilities
-
-
-
-Innovative Idea Generation: Contribute to the identification of data science opportunities by researching industry trends and brainstorming ideas that support Finfare’s business goals.
-
-Proof of Concept Development: Assist senior data scientists in building prototypes to explore the feasibility of new AI-driven ideas and present findings to the broader team.
-
-Model Development and Implementation: Support the development, implementation, and refinement of machine learning models to address business challenges and extract actionable insights.
-
-Data Exploration: Collect, preprocess data from various sources and conduct exploratory data analysis (EDA). Apply statistical methods to reveal trends, patterns, or anomalies that inform model building and product decisions.
-
-Statistical Analysis: Utilize advanced statistical and analytical techniques to uncover patterns, trends and meaningful insights from data.
-
-Data Transformation: Manipulate and transform data to prepare it for machine learning and analysis, maintaining data quality and consistency.
-
-Model Evaluation: Evaluate and optimize the performance of deployed models to ensure their accuracy and effectiveness.
-
-Additional Duties: Perform other ad-hoc duties as assigned.
-
-
-Qualifications and Requirements
-
-
-
-Education: Currently pursuing a degree in Data Science, Computer Science, Statistics, Engineering, or a related field; Or recently graduated. Graduate students with AI agent experience are strongly desired.
-
-
-Technical Skills:
-
-
-
-Strong understanding and execution of machine learning models and AI agents.
-
-Interested in and staying up to date with the latest trends, research and real-world applications of AI and data science.
-
-Clear communication and curiosity to learn
-
-
-Bonus Points:
-
-
-
-Strong data analysis and visualization skills.
-
-Prior experience in a fintech or data-intensive industry.
-
-Familiar with Python, SQL
-
-A proactive and open mindset, with a willingness to learn and adapt to emerging technologies.
+Support the entire mobile application lifecycle (concept, design, test, and release) in a fast paced environment for both existing and new mobile applications
+Work in partnership with cross-functional teams to grow, design, and implement new features
+Work in iterative sprints to design, develop, and test solutions
+Build automation and tests to streamline development

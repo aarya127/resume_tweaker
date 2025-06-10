@@ -121,7 +121,7 @@
  \begin{itemize}[leftmargin=0.15in, label={}]
     \small{\item{
      \textbf{Languages}{: Python, SQL, R, Java, JavaScript, TypeScript, C/C++, C\#, HTML/CSS, Scala} \\
-     \textbf{Tools}{: Azure, GCP, AWS, Snowflake, Git, Kubernetes, Docker, Linux, PostgreSQL, MySQL, MongoDB} \\
+     \textbf{Tools}{: Azure, GCP, AWS, Snowflake, Git, Kubernetes, Docker, Linux, PostgreSQL, NoSQL, MySQL, MongoDB} \\
      \textbf{Frameworks}{: Flask, NodeJS, React, PyTorch, TensorFlow, Langchain, Kafka, Hadoop, Spark}
     }}
  \end{itemize}
@@ -161,7 +161,7 @@
       {Software Engineer Intern (Machine Learning)}{Seattle, WA}
       \resumeItemListStart
         \resumeItem{Integrated active training \& fine-tuning to \textbf{10+ multi-agent RAG LLMs} using Langchain/OpenAI embeddings}
-        \resumeItem{Utilized MongoDB indexing in \textbf{C\# REST APIs} to optimize backend \& reduce query latency by \textbf{70\%}}
+        \resumeItem{Utilized indexing for NoSQL (Azure) in \textbf{C\# REST APIs} to optimize backend \& reduce query latency by \textbf{70\%}}
         \resumeItem{Conducted A/B testing to enhance experience using \textbf{React} to boost the carousel click-through rate by \textbf{20\%}}
       \resumeItemListEnd   
       
@@ -178,8 +178,8 @@
       {IBM}{July 2023 -- August 2023}
       {Software Engineer Intern (Machine Learning)}{New York, ON}
       \resumeItemListStart 
-        \resumeItem{Conducted \textbf{prompt tuning \& prompt engineering} on watsonx \textbf{GEN AI} models to enhance human interaction}
         \resumeItem{Developed file processors in \textbf{Git, C++ \& Docker} which improved RAG model performance for 10+ file types}
+        \resumeItem{Conducted \textbf{prompt tuning \& prompt engineering} on watsonx \textbf{GEN AI} models to enhance human interaction}
         \resumeItem{Assessed design variations of pre-existing LLMs in fraud detection \& Q/A bots which \textbf{increased 3\% accuracy}}
       \resumeItemListEnd
       

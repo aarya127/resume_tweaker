@@ -162,7 +162,7 @@
       \resumeItemListStart
         \resumeItem{Integrated active training \& fine-tuning to \textbf{7+ multi-agent RAG LLMs} using Langchain/OpenAI embeddings}
         \resumeItem{Researched predictive models using Python (\textbf{pytorch}) for customer churn with \textbf{98\%} satisfaction from \textbf{8+ clients}}
-        \resumeItem{Utilized CosmosDB (Azure) indexing in \textbf{C\# REST APIs} to optimize backend \& reduce query latency by \textbf{70\%}}
+        \resumeItem{Utilized indexing for NoSQL (Azure) in \textbf{C\# REST APIs} to optimize backend \& reduce query latency by \textbf{70\%}}
       \resumeItemListEnd   
       
     \resumeSubheading

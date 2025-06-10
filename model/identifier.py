@@ -15,11 +15,11 @@ class ResumeIdentifier:
         self.position_match = self.results.get("position_title_and_closest_match", "Data Science")
 
     def get_assets(self):
-        if self.position_match == "Data Science":
+        if self.position_match in ["Data Science", "Machine Learning Engineering"]:
             return ["data_science.txt", "Aaryads.pdf"]
-        elif self.position_match == "Data Engineering":
+        elif self.position_match == "Data Engineer":
             return ["data_engineer.txt", "Aaryade.pdf"]
-        elif self.position_match in ["Data Science+Engineering", "Machine Learning Engineering"]:
+        elif self.position_match == "Data Science+Engineering":
             return ["mix.txt", "Aaryamix.pdf"]
         elif self.position_match == "Software Engineer":
             return ["swe.txt", "Aaryase.pdf"]
