@@ -54,6 +54,15 @@ job_embedding = model.encode(job_summary, convert_to_tensor=True)
 # Step 2: Compute cosine similarity for each point
 similarity_scores = util.cos_sim(resume_embeddings, job_embedding)
 
-# Step 3: Show results
-for point, score in zip(resume_points, similarity_scores):
-    print(f"Point: {point}\nSimilarity: {score.item():.3f}\n")
+# Step 3: Store results in a CSV sorted by similarity (least to greatest)
+import csv
+
+results_list = [(point, score.item()) for point, score in zip(resume_points, similarity_scores)]
+results_list.sort(key=lambda x: x[1])  # Sort by similarity score ascending
+
+csv_path = os.path.join(os.path.dirname(__file__), '../resume/similarity_scores.csv')
+with open(csv_path, 'w', newline='') as csvfile:
+    writer = csv.writer(csvfile)
+    writer.writerow(['Resume Point', 'Similarity Score'])
+    for point, score in results_list:
+        writer.writerow([point, f"{score:.3f}"])

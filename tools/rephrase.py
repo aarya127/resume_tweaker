@@ -1,4 +1,4 @@
-# Use a pipeline as a high-level helper
+# Use a pipeline to rephrase the resume points that have been changed. Check if makes sense. Also limit characters to 1 line
 from transformers import pipeline
 import torch
 

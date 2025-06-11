@@ -1,50 +1,54 @@
 <think>
-Okay, let me try to figure out how to approach this. The user wants a comparison between the technologies in their resume and the job description. They need to know what's missing and what's extra.
+Okay, let's start by looking at the job description and the resume to compare the key technologies. The job description lists several important skills and technologies. First, they want proficiency in an object-oriented language like Python, Swift, Objective C, or Java. The resume mentions Python, Java, and C++, so that covers Python and Java. But Swift and Objective C are missing here.
 
-First, I'll look at the job description's key skills. The main technologies mentioned are Swift, iOS SDK, Kotlin, Android SDK, backend APIs, UI development, unit testing, CS fundamentals, iterative sprints, and automation/testing tools. 
+Next, machine learning libraries: TensorFlow, PyTorch, CoreFlow, and Scikit-learn. The resume has TensorFlow, PyTorch, and Scikit-learn under frameworks, but CoreFlow isn't mentioned. So CoreFlow is a missing technology here.
 
-Now, checking the resume's LaTeX code. The technical skills section lists Python, SQL, R, Java, JavaScript, React, Node.js, C, C++, HTML/CSS, MATLAB, Scala, Streamlit, and tools like Azure, GCP, AWS, Snowflake, Tableau, PowerBI, Git, Kubernetes, Docker, Linux, MongoDB, PostgreSQL. Frameworks include PyTorch, TensorFlow, Keras, Sklearn, XGBoost, Langchain, HuggingFace, Kafka, Hadoop, Spark, DBT.
+Then, building and adapting algorithms for machine learning, speech, multimodal sensing. The resume talks about neural networks, NLP models, RAG LLMs, which fit here. But maybe speech and multimodal sensing aren't explicitly mentioned. So those areas might be gaps.
 
-Looking through the experience and projects, there's mention of C#, REST APIs, React, Angular, Node.js, AWS, PostgreSQL, SQL, ETL, CI/CD, Airflow, Tableau, PowerBI, R, Excel, VBA, machine learning models like CNN, RNN, LSTM, Prophet, XGBoost, tools like Git, Docker, Kubernetes, Databricks, Azure, GCP, Snowflake, Kafka, Hadoop, Spark, DBT, Langchain, HuggingFace, OpenAI, Falcon-40b, Nvidia LLMs, TensorFlow Lite, etc.
+Crafting, prototyping, evaluating interactive systems. The resume has projects like chatbots and apps, which involve some interaction, but maybe not explicitly stated. The job might want more emphasis on prototyping or evaluating interactive systems, which isn't clearly present.
 
-Now, comparing the two. The job requires Swift/Kotlin for mobile development, but the resume doesn't mention those. The resume has a lot of data science and backend tools but lacks mobile-specific tech. Also, unit testing and automation tools are in the job description but not explicitly in the resume. The resume mentions React and Node.js, which might relate to UI, but maybe not mobile UI. CS fundamentals are probably covered through coursework. Iterative sprints might be implied through Agile or CI/CD experience. Automation tools like Airflow are present, but maybe not the specific ones mentioned in the job.
+Mathematical skills in linear algebra and statistics. The resume lists relevant coursework with neural networks, linear models, stochastic processes. That probably covers linear algebra and stats, but maybe not explicitly stated. Could be a soft miss.
 
-On the flip side, the resume has many data-related technologies (Snowflake, Tableau, PowerBI, PyTorch, TensorFlow, etc.) which aren't in the job description. The job is for a mobile software engineering role, so those might be extra.
+Collaboration and problem-solving are in the resume through team projects and roles, so those are covered.
 
-So, missing in resume: Swift, iOS SDK, Kotlin, Android SDK, explicit unit testing, backend server APIs (though REST APIs are mentioned), maybe specific automation tools. Extras in resume: Data science tools, cloud platforms beyond backend, BI tools, ML frameworks.
+For Applied ML Engineering, experience with integrating prototypes into production. The resume mentions integrating models into production apps, using CI/CD, deploying pipelines. That seems covered. Ethnographic studies aren't mentioned, so that's a missing point.
 
-I need to list each technology from the job description and count occurrences in both, then note missing and extra techs.
+Research-Focused internships require a doctoral degree and publications. The resume is for undergrad, so that's not applicable here.
+
+Now, looking at the resume's technologies: They have Python, Java, C++, which are good. Tools like Azure, GCP, AWS, Snowflake, etc. Frameworks include PyTorch, TensorFlow, Sklearn, Langchain, HuggingFace. The job mentions CoreFlow, which is missing. Also, Swift and Objective C are not present.
+
+The resume has some extra tech like React, Node.js, SQL, which aren't in the job's key skills but might be beneficial. However, the job doesn't list them as required.
+
+So, missing in resume: CoreFlow, Swift, Objective C, experience with speech/multimodal sensing, prototyping interactive systems (maybe), ethnographic studies. 
+
+Job doesn't mention some resume tech like React, Node.js, SQL, but those are extra. The resume has more on data engineering tools (Snowflake, Airflow) which the job doesn't require but might be a plus.
+
+Occurrences: Need to count how many times each key tech appears in resume vs job. For example, Python is in resume multiple times, same with PyTorch, TensorFlow. CoreFlow is in job but not resume. Swift/Objective C not in resume. Scikit-learn is in resume as Sklearn. 
+
+So the list would show missing tech from resume that are in job, and vice versa. Also, count occurrences where applicable.
 </think>
 
-**Technology Comparison: Resume vs. Job Description**  
+**Key Technologies Missing in Your Resume (Present in Job Description):**  
+- **CoreFlow** (Job: 1, Resume: 0)  
+- **Swift** (Job: 1, Resume: 0)  
+- **Objective C** (Job: 1, Resume: 0)  
+- **Speech/Multimodal Sensing** (Job: 1, Resume: 0)  
+- **Ethnographic Studies** (Job: 1, Resume: 0)  
 
-| **Technology**            | **Resume Count** | **Job Desc. Count** | **Status**  |  
-|---------------------------|------------------|---------------------|-------------|  
-| Swift/iOS SDK             | 0                | 1                   | **Missing** |  
-| Kotlin/Android SDK        | 0                | 1                   | **Missing** |  
-| Multi-threaded/Async Code | 0                | 1                   | **Missing** |  
-| Backend Server APIs       | 1 (C# REST APIs) | 1                   | Partial     |  
-| UI Development            | 2 (React, Angular)| 1                   | Covered     |  
-| Unit Testing              | 0                | 1                   | **Missing** |  
-| CS Fundamentals           | 1 (Coursework)   | 1                   | Covered     |  
-| Iterative Sprints         | 1 (CI/CD)        | 1                   | Implied     |  
-| Automation/Testing Tools  | 1 (Airflow)      | 1                   | Partial     |  
+**Technologies in Your Resume (Not in Job Description):**  
+- **SQL** (Resume: 5+, Job: 0)  
+- **React/Node.js** (Resume: 3+, Job: 0)  
+- **Data Engineering Tools** (e.g., Snowflake, Airflow, Spark, DBT) (Resume: 5+, Job: 0)  
 
----
+**Overlap (Resume vs. Job):**  
+- **Python** (Resume: 10+, Job: 1)  
+- **PyTorch** (Resume: 2, Job: 1)  
+- **TensorFlow** (Resume: 2, Job: 1)  
+- **Scikit-learn** (Resume: 1, Job: 1)  
+- **Java** (Resume: 2, Job: 1)  
+- **C++** (Resume: 2, Job: 0)  
 
-### **Missing in Resume** (Job Description Requirements):  
-- Swift, iOS SDK, Kotlin, Android SDK  
-- Explicit mention of **unit testing** (e.g., JUnit, XCTest).  
-- **Multi-threaded/asynchronous code** (e.g., GCD, Coroutines).  
-- Specific automation tools (e.g., Espresso, Jenkins).  
-
----
-
-### **Extra in Resume** (Not in Job Description):  
-- **Data/ML Tools**: Snowflake, Tableau, PowerBI, PyTorch, TensorFlow, XGBoost, Langchain, HuggingFace.  
-- **Cloud/Backend**: Azure, GCP, AWS, Spark, Hadoop, Kafka, DBT.  
-- **Web Dev**: React, Angular, Node.js, Streamlit.  
-
----
-
-**Action Steps**: Highlight mobile development willingness, add unit testing/async keywords, trim excess data/ML tools if space is limited.
+**Actionable Steps:**  
+1. Add **CoreFlow** and mention **speech/multimodal sensing** if applicable.  
+2. Highlight **interactive system prototyping** (e.g., chatbots/apps) explicitly.  
+3. Remove/soften non-relevant tools (e.g., React, SQL) unless space allows.

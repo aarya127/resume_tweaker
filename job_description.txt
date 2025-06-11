@@ -1,14 +1,20 @@
-Requirements
-Software Engineering Intern-Ability to work at Verkada HQ during fall 2025 (September 8 start date)
-Actively pursuing a Bachelors degree in Computer Science (or similar degree plan) with a graduate date in early to mid 2026
-Proficient understanding of Swift and iOS SDK OR Kotlin and Android SDK, and a willingness to learn about both
-Experience writing multi-threaded, asynchronous code
-Experience working with backend server APIs
-Solid UI development and unit testing skills
-Thorough understanding of fundamental Computer Science concepts
-Excellent interpersonal skills and ability to work well alongside engineers of all levels
-Responsibilities
-Support the entire mobile application lifecycle (concept, design, test, and release) in a fast paced environment for both existing and new mobile applications
-Work in partnership with cross-functional teams to grow, design, and implement new features
-Work in iterative sprints to design, develop, and test solutions
-Build automation and tests to streamline development
+Job Responsibilities:
+In an AIML internship, you will collaborate with researchers, engineers, and program/project managers to tackle innovative challenges. You will also receive technical mentorship and guidance that allows you to learn new things every day, gain practical skills, build real world experience, develop a greater understanding of our industry, and form valuable connections. Together, you and your team will partner to design and implement an innovative solution for a Machine Learning problem that is meaningful. At the end of your internship, you will have the opportunity to meet and present your work to AIML leadership. Where appropriate, you will have the opportunity to submit your work for publication at a suitable conference.
+
+Required Skills:
+Minimum Qualifications:
+
+Working toward an undergraduate, graduate or doctoral degree in computer science, engineering, data science, applied mathematics, or equivalent. Doctoral degree paths are preferred for research focused internships.
+At the end of the internship, you must return to school to continue your education or the internship must be the last requirement for you to graduate.
+
+It's helpful if you meet one or more of the following qualifications, but it isn't a requirement:
+Proficiency with an object-oriented programming language, such as Python, Swift, Objective C or Java
+Experience with ML libraries, such as TensorFlow, PyTorch, CoreFlow, and Sklearn
+Practical knowledge related to building and adapting algorithms for machine learning, speech, multimodal sensing, and related areas
+Familiarity with crafting, prototyping, and evaluating interactive systems
+Excellent mathematical skills in linear algebra and statistics
+Ability to collaborate with others
+Problem solving skills
+Applied ML Engineering internships: Experience with integrating research prototypes into production applications. Proficiency conducting ethnographic or other situated studies of human interaction with or through interactive technologies. Experience crafting, conducting, analyzing, and interpreting experiments and investigations
+Demonstrated expertise with proven publication or track record in at least one of the areas: statistics, econometrics, operations research, quantitative marketing, causal inference, time series analysis, stochastic modeling, optimization and decision making theory
+Research-Focused internships: Currently pursuing a doctoral degree. Research experience in Machine Learning and a demonstrable record of publishing academic research in peer-reviewed venues
