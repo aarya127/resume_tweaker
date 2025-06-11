@@ -103,7 +103,7 @@ explicit_prompt = (
 )
 
 explicit_completion = client.chat.completions.create(
-    model="deepseek-ai/deepseek-r1",
+    model="nvidia/llama-3.1-nemotron-nano-vl-8b-v1",  # Use Nemotron model for explicit extraction
     messages=[{"role": "user", "content": explicit_prompt}],
     temperature=0.3,
     top_p=0.7,
