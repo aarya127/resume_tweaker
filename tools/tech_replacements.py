@@ -34,7 +34,7 @@ prompt = (
     "You are an expert resume editor. Go through the following resume points (sorted by least similarity to the job description) and the list of missing technologies. "
     "For each missing technology, try to add it to the resume points, starting from the top. Ensure that each missing technology is mentioned once. "
     "You may replace existing technologies that are present in the resume but not in the job description. "
-    "If a technology is present in my resume and the description, make sure it is mentioned 3 times atleast."
+    "If a technology is present in my resume and the description, make sure it is mentioned 2-3 times atleast."
     "Once all missing technologies are addressed, stop editing. Do not go through all the resume points if not needed.\n\n"
     f"Missing technologies (with counts):\n{missing_techs}\n\n"
     f"Resume points (one per line):\n" + "\n".join(resume_points)
