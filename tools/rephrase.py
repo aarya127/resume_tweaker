@@ -1,11 +1,16 @@
-# Use a pipeline to rephrase the resume points that have been changed. Check if makes sense. Also limit characters to 1 line
-from transformers import pipeline
-import torch
+import os
+import sys
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '../model')))
+from identifier import ResumeIdentifier
 
-pipe = pipeline("text2text-generation", model="google/flan-t5-small", device=torch.device("cpu"))
+# Use ResumeIdentifier to get the correct resume .txt file
+identifier = ResumeIdentifier()
+txt_file = identifier.get_txt_file()
 
-# Prompt for rephrasing
-prompt = "Rephrase the following resume point to emphasize C++: Designed 15+ Tableau & PowerBI Dashboards & wrote 20+ SQL queries to influence business decisions."
-
-output = pipe(prompt, max_new_tokens=100, do_sample=True, temperature=0.7)
-print(output[0]["generated_text"])
+# Print all the revised resume points for the selected resume
+# If you want to use a file like revised_resume_points_<resume>.txt, adjust here
+revised_path = os.path.join(os.path.dirname(__file__), f'../resume/revised_resume_points.txt')
+with open(revised_path, 'r') as f:
+    for line in f:
+        if line.strip():
+            print(line.strip())

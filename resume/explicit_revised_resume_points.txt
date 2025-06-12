@@ -1,3 +1,0 @@
-1. **Constructed a multimodal sensing system using CoreFlow** to process pupil images, **speech inputs**, and attention span for drowsiness detection, achieving 92% accuracy.
-2. **Engineered robust iOS app using Swift and Objective C**, integrating ML models to read prescriptions, verify coverage, and calculate pricing/availability in real-time.
-3. **Conducted A/B testing and ethnographic studies** to optimize user experience, increasing carousel click-through rate by 25%.

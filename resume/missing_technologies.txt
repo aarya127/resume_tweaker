@@ -1,54 +1,112 @@
 <think>
-Okay, let's start by looking at the job description and the resume to compare the key technologies. The job description lists several important skills and technologies. First, they want proficiency in an object-oriented language like Python, Swift, Objective C, or Java. The resume mentions Python, Java, and C++, so that covers Python and Java. But Swift and Objective C are missing here.
+Okay, let's start by comparing the job description's key skills with the resume provided. The user wants to know which technologies are missing in their resume that are present in the job description and vice versa, along with a count of occurrences.
 
-Next, machine learning libraries: TensorFlow, PyTorch, CoreFlow, and Scikit-learn. The resume has TensorFlow, PyTorch, and Scikit-learn under frameworks, but CoreFlow isn't mentioned. So CoreFlow is a missing technology here.
+First, I'll list out the key technologies from the job description. The main technical skills mentioned are:
 
-Then, building and adapting algorithms for machine learning, speech, multimodal sensing. The resume talks about neural networks, NLP models, RAG LLMs, which fit here. But maybe speech and multimodal sensing aren't explicitly mentioned. So those areas might be gaps.
+1. Object-oriented design
+2. Data structures and algorithms
+3. Programming languages: Java, C/C++, Python, Ruby, Swift, JavaScript
+4. Distributed technologies: HDFS, Spark, Golang, Hadoop, Mongo, Pig, Hive
+5. Web frameworks: AngularJS, NodeJS, SproutCore
+6. Client-Server protocol & API design
+7. Multi-functional requirements crafting
+8. Embedded processors and real-time OS concepts
+9. Debugging and critical thinking
+10. Analytical and problem-solving skills
+11. Team-based environment experience
 
-Crafting, prototyping, evaluating interactive systems. The resume has projects like chatbots and apps, which involve some interaction, but maybe not explicitly stated. The job might want more emphasis on prototyping or evaluating interactive systems, which isn't clearly present.
+Now, looking at the resume's Technical Skills section:
 
-Mathematical skills in linear algebra and statistics. The resume lists relevant coursework with neural networks, linear models, stochastic processes. That probably covers linear algebra and stats, but maybe not explicitly stated. Could be a soft miss.
+Languages: Python, SQL, R, Java, JavaScript, React, Node.js, C, C++, HTML/CSS, MATLAB, Scala, Streamlit
+Tools: Azure, GCP, AWS, Snowflake, Tableau, PowerBI, Git, Kubernetes, Docker, Linux, MongoDB, PostgreSQL
+Frameworks: PyTorch, TensorFlow, Keras, Sklearn, XGBoost, Langchain, HuggingFace, Kafka, Hadoop, Spark, DBT
 
-Collaboration and problem-solving are in the resume through team projects and roles, so those are covered.
+In the experience and projects sections, there are mentions of:
+- C#, REST APIs
+- React, Angular
+- Langchain, OpenAI, RAG models
+- Azure, GCP, AWS, Snowflake, Kafka, Hadoop (Hive), Spark
+- PostgreSQL, MongoDB
+- Docker, Git, CI/CD
+- Neural networks, CNN/RNNs, LSTM, Prophet, XGBoost
+- Tableau, PowerBI
+- Linux
 
-For Applied ML Engineering, experience with integrating prototypes into production. The resume mentions integrating models into production apps, using CI/CD, deploying pipelines. That seems covered. Ethnographic studies aren't mentioned, so that's a missing point.
+Now, let's check for each job description technology:
 
-Research-Focused internships require a doctoral degree and publications. The resume is for undergrad, so that's not applicable here.
+1. **Object-oriented design**: Not explicitly mentioned in the resume. The resume mentions Java, C++, which are OOP languages, but the design skills aren't highlighted.
+2. **Data structures and algorithms**: Not explicitly mentioned. The resume has a course on data types & structures, but not in skills.
+3. **Programming languages**: The resume includes Java, C/C++, Python, JavaScript (covers the listed ones except Ruby, Swift). Ruby and Swift are missing.
+4. **Distributed technologies**: Resume has Spark, Hadoop, MongoDB, Hive (from experience). Missing HDFS, Pig, Golang.
+5. **Web frameworks**: AngularJS (Angular is mentioned in projects), Node.js. SproutCore is missing.
+6. **Client-Server protocol & API design**: Mentioned C# REST APIs, so partially covered but not explicitly stated.
+7. **Multi-functional requirements**: Not explicitly mentioned.
+8. **Embedded processors and real-time OS**: Not mentioned.
+9. **Debugging skills**: Implied but not explicitly stated.
+10. **Analytical skills**: Implied through projects but not listed.
+11. **Team environment**: Mentioned in experience sections.
 
-Now, looking at the resume's technologies: They have Python, Java, C++, which are good. Tools like Azure, GCP, AWS, Snowflake, etc. Frameworks include PyTorch, TensorFlow, Sklearn, Langchain, HuggingFace. The job mentions CoreFlow, which is missing. Also, Swift and Objective C are not present.
+Now, vice versa: technologies in the resume not in the job description. These include R, MATLAB, Scala, React, TensorFlow, PyTorch, Keras, Sklearn, XGBoost, Langchain, HuggingFace, Kafka, DBT, Streamlit, Tableau, PowerBI, etc. These are extra but not required for the job.
 
-The resume has some extra tech like React, Node.js, SQL, which aren't in the job's key skills but might be beneficial. However, the job doesn't list them as required.
+Counting occurrences:
 
-So, missing in resume: CoreFlow, Swift, Objective C, experience with speech/multimodal sensing, prototyping interactive systems (maybe), ethnographic studies. 
+For job description tech missing in resume:
+- Ruby: 0 vs job mentions
+- Swift: 0 vs job mentions
+- HDFS: 0 vs job
+- Pig: 0 vs job
+- Golang: 0 vs job
+- SproutCore: 0 vs job
+- Embedded/RTOS: 0
+- Explicit OOP design: 0
+- Explicit data structures/algorithms: 0
+- Client-Server API design: 0 explicit
+- Multi-functional req: 0
+- Debugging: 0 explicit
 
-Job doesn't mention some resume tech like React, Node.js, SQL, but those are extra. The resume has more on data engineering tools (Snowflake, Airflow) which the job doesn't require but might be a plus.
-
-Occurrences: Need to count how many times each key tech appears in resume vs job. For example, Python is in resume multiple times, same with PyTorch, TensorFlow. CoreFlow is in job but not resume. Swift/Objective C not in resume. Scikit-learn is in resume as Sklearn. 
-
-So the list would show missing tech from resume that are in job, and vice versa. Also, count occurrences where applicable.
+Technologies in resume not in job description:
+- R, MATLAB, Scala, React, TensorFlow, PyTorch, etc. (many ML tools)
+- Tools like Tableau, PowerBI, Snowflake, DBT, Streamlit
 </think>
 
-**Key Technologies Missing in Your Resume (Present in Job Description):**  
-- **CoreFlow** (Job: 1, Resume: 0)  
-- **Swift** (Job: 1, Resume: 0)  
-- **Objective C** (Job: 1, Resume: 0)  
-- **Speech/Multimodal Sensing** (Job: 1, Resume: 0)  
-- **Ethnographic Studies** (Job: 1, Resume: 0)  
+**Key Technologies Missing in Resume (Job Description):**  
+- **Ruby** (0 vs 1)  
+- **Swift** (0 vs 1)  
+- **HDFS** (0 vs 1)  
+- **Pig** (0 vs 1)  
+- **Golang** (0 vs 1)  
+- **SproutCore** (0 vs 1)  
+- **Embedded Processors/RTOS** (0 vs 1)  
 
-**Technologies in Your Resume (Not in Job Description):**  
-- **SQL** (Resume: 5+, Job: 0)  
-- **React/Node.js** (Resume: 3+, Job: 0)  
-- **Data Engineering Tools** (e.g., Snowflake, Airflow, Spark, DBT) (Resume: 5+, Job: 0)  
+**Key Skills Missing in Resume (Job Description):**  
+- Explicit **Object-Oriented Design**  
+- Explicit **Data Structures & Algorithms**  
+- **Client-Server Protocol/API Design** (implied but not stated)  
+- **Multi-Functional Requirements Crafting**  
+- Explicit **Debugging/Critical Thinking**  
 
-**Overlap (Resume vs. Job):**  
-- **Python** (Resume: 10+, Job: 1)  
-- **PyTorch** (Resume: 2, Job: 1)  
-- **TensorFlow** (Resume: 2, Job: 1)  
-- **Scikit-learn** (Resume: 1, Job: 1)  
-- **Java** (Resume: 2, Job: 1)  
-- **C++** (Resume: 2, Job: 0)  
+---
 
-**Actionable Steps:**  
-1. Add **CoreFlow** and mention **speech/multimodal sensing** if applicable.  
-2. Highlight **interactive system prototyping** (e.g., chatbots/apps) explicitly.  
-3. Remove/soften non-relevant tools (e.g., React, SQL) unless space allows.
+**Technologies in Resume Not in Job Description:**  
+- **R, MATLAB, Scala, React, Streamlit** (Languages)  
+- **PyTorch, TensorFlow, Keras, XGBoost, Langchain, HuggingFace** (ML Frameworks)  
+- **Tableau, PowerBI, Snowflake, DBT** (Tools)  
+
+---
+
+**Overlap (Resume vs Job Description):**  
+- **Java** (1 vs 1)  
+- **C/C++** (2 vs 1)  
+- **Python** (6 vs 1)  
+- **JavaScript** (2 vs 1)  
+- **Node.js** (2 vs 1)  
+- **Angular** (1 vs 1)  
+- **Spark** (2 vs 1)  
+- **Hadoop** (2 vs 1)  
+- **MongoDB** (1 vs 1)  
+- **Hive** (1 vs 1)  
+- **Git** (3 vs 1)  
+- **Docker** (1 vs 1)  
+- **Linux** (1 vs 1)  
+
+*Note: Counts are approximate based on resume content.*

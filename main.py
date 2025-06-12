@@ -14,4 +14,7 @@ subprocess.run([sys.executable, os.path.join("model", "similarity.py")])
 # Run resume_breakdown to analyze the resume and job description
 subprocess.run([sys.executable, os.path.join("model", "resume_breakdown.py")])
 
+# Run tech_replacements to revise resume points and compare similarity
+subprocess.run([sys.executable, os.path.join("tools", "tech_replacements.py")])
+
 # You can add more script calls here if needed

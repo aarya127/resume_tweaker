@@ -1,4 +1,0 @@
-Original Resume Point,Original Similarity,Explicit Revised Resume Point,Revised Similarity
-"Designed a caching layer with PostgreSQL optimizing load times reducing latency for 4,000,000+ users",0.419,"1. **Constructed a multimodal sensing system using CoreFlow** to process pupil images, **speech inputs**, and attention span for drowsiness detection, achieving 92% accuracy.",0.562
-Built an optimization algorithm using unsupervised learning methods to find most fuel efficient flight path,0.456,"2. **Engineered robust iOS app using Swift and Objective C**, integrating ML models to read prescriptions, verify coverage, and calculate pricing/availability in real-time.",0.541
-Conducted A/B testing to enhance experience using React to boost the carousel click-through rate by 25%,0.459,"3. **Conducted A/B testing and ethnographic studies** to optimize user experience, increasing carousel click-through rate by 25%.",0.444

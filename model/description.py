@@ -75,7 +75,7 @@ completion_position_title = client_1.chat.completions.create(
     messages=[{"role": "user", "content": "which one of the following is the job title the closest to? Data Science, Data Engineering, Data Science+Engineering, Machine Learning Engineering or Software Engineer? Give me an answer from the options without an explanation. " + job_description}],
     temperature=1.00,
     top_p=0.01,
-    max_tokens=256,
+    max_tokens=512,
     stream=True
 )
 
