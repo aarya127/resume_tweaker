@@ -1,63 +1,45 @@
 import os
 import csv
-from openai import OpenAI
 
-# Paths to the CSV files
-sim_scores_path = os.path.join(os.path.dirname(__file__), '../resume/similarity_scores.csv')
-revised_sim_path = os.path.join(os.path.dirname(__file__), '../resume/revised_resume_points_similarity.csv')
+def get_kept_resume_points(csv_path=None):
+    if csv_path is None:
+        csv_path = os.path.join(os.path.dirname(__file__), '../resume/revised_resume_points_similarity.csv')
+    results = []
+    with open(csv_path, 'r') as f:
+        reader = list(csv.DictReader(f))
+        for i in range(0, len(reader), 2):
+            row1 = reader[i]
+            row2 = reader[i+1] if i+1 < len(reader) else None
+            if not row2:
+                # Only keep if 'original' is NOT in the kept point
+                if 'original' not in row1['Revised Resume Point'].lower():
+                    results.append({
+                        'kept': row1['Revised Resume Point'],
+                        'discarded': None,
+                        'kept_score': float(row1.get('Similarity Score', 0)),
+                        'discarded_score': None
+                    })
+                continue
+            score1 = float(row1.get('Similarity Score', 0))
+            score2 = float(row2.get('Similarity Score', 0))
+            point1 = row1.get('Revised Resume Point', '')
+            point2 = row2.get('Revised Resume Point', '')
+            # Determine which point is kept
+            if score1 > score2:
+                kept, discarded, kept_score, discarded_score = point1, point2, score1, score2
+            elif score2 > score1:
+                kept, discarded, kept_score, discarded_score = point2, point1, score2, score1
+            else:
+                # If scores are equal, keep the one with 'original' in the text
+                if 'original' in point1.lower():
+                    kept, discarded, kept_score, discarded_score = point1, point2, score1, score2
+                else:
+                    kept, discarded, kept_score, discarded_score = point2, point1, score2, score1
+            # Only keep if 'original' is NOT in the kept point
+            if 'original' not in kept.lower():
+                results.append({'kept': kept, 'discarded': discarded, 'kept_score': kept_score, 'discarded_score': discarded_score})
+    return results
 
-# Load API key (second line in keys.txt, as in description.py)
-with open(os.path.join(os.path.dirname(__file__), '../keys.txt'), 'r') as f:
-    lines = [line.strip() for line in f if line.strip()]
-api_key = lines[1] if len(lines) > 1 else None
-
-client = OpenAI(
-    base_url="https://integrate.api.nvidia.com/v1",
-    api_key=api_key
-)
-
-# Read original resume points and scores
-with open(sim_scores_path, 'r') as f:
-    reader = csv.DictReader(f)
-    orig_points = [row['Resume Point'].strip() for row in reader]
-    f.seek(0)
-    reader = csv.DictReader(f)
-    orig_scores = [float(row['Similarity Score']) for row in reader]
-
-# Read revised resume points and scores
-with open(revised_sim_path, 'r') as f:
-    reader = csv.DictReader(f)
-    revised_points = [row['Revised Resume Point'].strip() for row in reader]
-    f.seek(0)
-    reader = csv.DictReader(f)
-    revised_scores = [float(row['Similarity Score']) for row in reader]
-
-# Use IBM Granite model to match revised points to original points and compare scores
-for i, revised in enumerate(revised_points):
-    prompt = (
-        "Given the following list of original resume points, which one is most likely the source for the revised resume point below?\n"
-        "List of original resume points:\n" + '\n'.join(f"{j+1}. {pt}" for j, pt in enumerate(orig_points)) +
-        f"\n\nRevised resume point:\n{revised}\n\n"
-        "Respond with only the number of the most likely original resume point."
-        "Then give me a response in this format -- Original: , Revised:  , Original Score:  , Revised Score:  , Improved:  \n"
-    )
-    print("\n--- Resume Prompt Sent to Model ---\n")
-    print(prompt)
-    print("\n--- End Resume Prompt ---\n")
-    completion = client.chat.completions.create(
-        model="ibm/granite-3.3-8b-instruct",
-        messages=[{"role": "user", "content": prompt}],
-        temperature=0.2,
-        top_p=0.7,
-        max_tokens=2048,
-        stream=True
-    )
-    response = ""
-    for chunk in completion:
-        if hasattr(chunk, 'choices') and chunk.choices[0].delta.content is not None:
-            response += chunk.choices[0].delta.content
-        elif isinstance(chunk, dict) and 'choices' in chunk and chunk['choices'][0]['delta']['content'] is not None:
-            response += chunk['choices'][0]['delta']['content']
-        elif isinstance(chunk, str):
-            response += chunk
-    print(response)
+if __name__ == "__main__":
+    for result in get_kept_resume_points():
+        print(f"KEPT: {result['kept']} (Score: {result['kept_score']})\nDISCARDED: {result['discarded']} (Score: {result['discarded_score']})\n---")

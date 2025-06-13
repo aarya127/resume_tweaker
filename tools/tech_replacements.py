@@ -72,6 +72,9 @@ with open(revised_path, 'r') as f:
 explicit_prompt = (
     "Given the following output from a resume editing model, explicitly list only the revised resume points and their respective original point, one per line, with no extra explanation or commentary.\n\n"
     f"Model output:\n{output_text}"
+    "Give me the results in the following format:\n"
+    "Revised Point: ...\n"
+    "Original Point: ...\n"
 )
 
 explicit_completion = client.chat.completions.create(
