@@ -17,4 +17,10 @@ subprocess.run([sys.executable, os.path.join("model", "resume_breakdown.py")])
 # Run tech_replacements to revise resume points and compare similarity
 subprocess.run([sys.executable, os.path.join("tools", "tech_replacements.py")])
 
+# Run approve_change to select which points to keep
+subprocess.run([sys.executable, os.path.join("tools", "approve_change.py")])
+
+# Run latex_code_writer to update the LaTeX resume
+subprocess.run([sys.executable, os.path.join("tools", "latex_code_writer.py")])
+
 # You can add more script calls here if needed
