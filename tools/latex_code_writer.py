@@ -44,13 +44,13 @@ client = OpenAI(
     api_key=api_key
 )
 
-# Call the IBM model
+# Call the DeepSeek model (use the same model as in resume_breakdown.py)
 completion = client.chat.completions.create(
-    model="ibm/granite-3.3-8b-instruct",
+    model="deepseek-ai/deepseek-r1-0528",
     messages=[{"role": "user", "content": prompt}],
     temperature=0.2,
     top_p=0.7,
-    max_tokens=8192,
+    max_tokens=7000,
     stream=True
 )
 
