@@ -120,9 +120,9 @@
 \section{Technical Skills}
  \begin{itemize}[leftmargin=0.15in, label={}]
     \small{\item{
-     \textbf{Languages}{: Python, SQL, R, Java, JavaScript, React, Node.js, C, C++, HTML/CSS, Scala} \\
-     \textbf{Tools}{: Azure, GCP, AWS, Snowflake, Excel, Tableau, PowerBI, Git, Airflow, DLT, Kubernetes, Docker} \\
-     \textbf{Frameworks}{: PyTorch, TensorFlow, XGBoost, Langchain, Kafka, Hadoop, Spark, DBT}
+     \textbf{Languages}{: Python, SQL, R, Java, JavaScript, React, NodeJS, C++, C\#, Scala} \\
+     \textbf{Tools}{: Azure, GCP, AWS, Snowflake, Excel, Tableau, PowerBI, Git, Airflow, DLT, Docker} \\
+     \textbf{Frameworks}{: PyTorch, TensorFlow, Sckit-Learn, Langchain, Kafka, Hadoop, Spark, DBT}
     }}
  \end{itemize}
 
@@ -197,7 +197,7 @@
       {Machine Learning Intern}{New York, NY}
       \resumeItemListStart 
         \resumeItem{Conducted \textbf{prompt tuning \& prompt engineering} on watsonx \textbf{GEN AI} models to enhance human interaction}
-        \resumeItem{Developed file processors in \textbf{Git, C++ \& Docker} which improved RAG model performance for 10+ file types}
+        \resumeItem{Developed file processors in \textbf{C++ \& Docker} which improved RAG model performance for 10+ file types}
         \resumeItem{Assessed design variations of pre-existing LLMs in fraud detection \& Q/A bots which \textbf{increased 3\% accuracy}}
       \resumeItemListEnd
       
@@ -207,7 +207,7 @@
       \resumeItemListStart
         \resumeItem{Performed \textbf{regression modelling} \& statistical analysis in \textbf{R, Python \& Excel} using macros/VBA}
         \resumeItem{Designed \textbf{15+ Tableau \& PowerBI Dashboards} \& wrote \textbf{20+ SQL queries} to influence business decisions}
-        \resumeItem{Performed \textbf{regression and logistic modeling} \& statistical analysis in \textbf{R, Python \& Excel} using macros/VBA}
+        \resumeItem{Performed \textbf{regression and logistic modeling} for statistical analysis in \textbf{R/Python scripts \& Excel (VBA)}}
       \resumeItemListEnd   
       
       

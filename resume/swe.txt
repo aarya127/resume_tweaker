@@ -120,9 +120,9 @@
 \section{Technical Skills}
  \begin{itemize}[leftmargin=0.15in, label={}]
     \small{\item{
-     \textbf{Languages}{: Python, SQL, R, Java, JavaScript, TypeScript, C/C++, C\#, HTML/CSS, Scala} \\
-     \textbf{Tools}{: Azure, GCP, AWS, Snowflake, Git, Kubernetes, Docker, Linux, PostgreSQL, NoSQL, MySQL, MongoDB} \\
-     \textbf{Frameworks}{: Flask, NodeJS, React, PyTorch, TensorFlow, Langchain, Kafka, Hadoop, Spark}
+     \textbf{Languages}{: Python, SQL, R, Java, JavaScript, TypeScript, C++, C\#, Scala} \\
+     \textbf{Tools}{: Azure, GCP, AWS, Snowflake, Git, Kubernetes, Docker, PostgreSQL, NoSQL, MongoDB} \\
+     \textbf{Frameworks}{: NodeJS, React, PyTorch, TensorFlow, Langchain, Kafka, Hadoop, Spark}
     }}
  \end{itemize}
 
@@ -197,7 +197,7 @@
       {Software Engineer Intern}{Mississauga, ON}
       \resumeItemListStart
         \resumeItem{Designed a caching layer with \textbf{PostgreSQL} optimizing load times reducing latency for \textbf{4,000,000+ users}}
-        \resumeItem{Built 25+ REST API and backend features using TypeScript and MongoDB serving 2 million requests a month}
+        \resumeItem{Built 25+ REST API and backend features using \textbf{TypeScript} and \textbf{MongoDB} serving 2 million requests a month}
       \resumeItemListEnd   
 
     \resumeSubheading

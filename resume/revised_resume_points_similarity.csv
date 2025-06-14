@@ -1,13 +1,7 @@
 Revised Resume Point,Similarity Score
-Revised Point: Utilized CosmosDB (Azure) indexing in **Golang** REST APIs to optimize backend & reduce query latency by 70%,0.469
-Original Point: Utilized CosmosDB (Azure) indexing in **C#** REST APIs to optimize backend & reduce query latency by 70%,0.437
-"Revised Point: Performed regression and logistic modeling & statistical analysis in **Ruby**, Python & Excel using macros/VBA",0.491
-"Original Point: Performed regression and logistic modeling & statistical analysis in **R**, Python & Excel using macros/VBA",0.446
-Revised Point: Conducted A/B testing to enhance experience using **SproutCore** to boost the carousel click-through rate by 25%,0.469
-Original Point: Conducted A/B testing to enhance experience using **React** to boost the carousel click-through rate by 25%,0.481
-Revised Point: Identified various methods to transition data foundation from DB2 to **HDFS** to increase user flexibility,0.468
-Original Point: Identified various methods to transition data foundation from DB2 to **Snowflake** to increase user flexibility,0.484
-"Revised Point: Accelerated data pipelines by validating 25+ data sources in Data Lake, **Pig**, Hadoop (Hive) & SQL",0.507
-"Original Point: Accelerated data pipelines by validating 25+ data sources in Data Lake, **Kafka**, Hadoop (Hive) & SQL",0.507
-Revised Point: Conducted prompt tuning & prompt engineering on **Swift**-based models to enhance human interaction,0.486
-Original Point: Conducted prompt tuning & prompt engineering on **watsonxGEN AI** models to enhance human interaction,0.451
+Revised Point: Conducted A/B testing to enhance experience using Facebook Data API to boost the carousel click-through rate by 25%,0.513
+Original Point: Conducted A/B testing to enhance experience using React to boost the carousel click-through rate by 25%,0.455
+Revised Point: Integrated active training & fine-tuning to 7+ multi-agent RAG LLMs using Google Data API/OpenAI embeddings,0.504
+Original Point: Integrated active training & fine-tuning to 7+ multi-agent RAG LLMs using Langchain/OpenAI embeddings,0.472
+Revised Point: Performed regression and logistic modeling for statistical analysis in RedShift/Python scripts & Excel (VBA),0.562
+Original Point: Performed regression and logistic modeling for statistical analysis in R/Python scripts & Excel (VBA),0.522

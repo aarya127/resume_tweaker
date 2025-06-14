@@ -24,7 +24,7 @@ class ResumeIdentifier:
         elif self.position_match == "Software Engineer":
             return ["swe.txt", "Aaryase.pdf"]
         else:
-            return ["data_science.txt", "Aaryads.pdf"]  # default fallback
+            return ["mix.txt", "Aaryamix.pdf"]  # default fallback
 
     def get_txt_file(self):
         return self.get_assets()[0]

@@ -1,23 +1,15 @@
-Software Engineer @ Apple. Required Skills:
-Minimum Qualifications
+This position is for data engineering at thescore. Required Skills:
+About You
 
-Pursuing BS/MS/PhD program in Computer Science, Electrical Engineering, Computer Engineering, Data Science, Design, or related fields.
-At the end of the internship, you must return to school to continue your education or the internship must be the last requirement for you to graduate.
-Preferred Qualifications
-It's helpful if you meet one or more of the following qualifications, but it isn't a requirement
-Strong object-oriented design skills, coupled with a deep knowledge of data structures and algorithms
-Proficiency in one or more developer skills: Java, C/C++, PHP, Python, Ruby, Unix, MySQL, Clojure, Scala, Java Script, CSS, HTML5, Swift
-Experience in sophisticated methodologies such as Data Modeling, Validation, Processing, MapReduce
-Experience with distributed technologies such as HDFS, Spark, Golang, Hadoop, Mongo, Pig, Hive
-Experience with web frameworks such as AngularJS, NodeJS, SproutCore
-Experience with iOS and macOS developing in Swift, XCode or Objective-C
-Client-Server protocol & API design Skills
-Able to craft multi-functional requirements and translate them into practical engineering tasks
-A fundamental knowledge of embedded processors, with in-depth knowledge of real time operating system concepts
-Excellent debugging and critical thinking skills
-Excellent analytical and problem-solving skills
-Ability to work in a fast paced, team-based environment
-
-This posting is not for a specific job opening and by submitting your resume you are expressing interest in being contacted about this type of role at Apple in the future.
-Compensation and Benefits:
-To be discussed with recruiter upon match
+A solid foundation in computer science, with strong competencies in data structures, distributed systems, algorithms, and software design
+Excellent communication skills.
+Experience with Python
+Experience in SQL and other Relational Databases
+Been part of a data-driven team
+Experience with Docker and Kubernetes
+Good knowledge of Math (e.g. data modeling/applied statistics)
+Experience with data ingestion APIs (e.g. Facebook, Google)
+Experience with Airflow
+Experience with RedShift, Snowflake or other SQL-based data warehouses
+Experience with Event-based architectures is a plus
+Experience building out a scalable infrastructure to fit the needs of a growing company

@@ -120,9 +120,9 @@
 \section{Technical Skills}
  \begin{itemize}[leftmargin=0.15in, label={}]
     \small{\item{
-     \textbf{Languages}{: Python, SQL, R, Java, JavaScript, React, Node.js, C, C++, HTML/CSS, MATLAB, Scala, Streamlit} \\
-     \textbf{Tools}{: Azure, GCP, AWS, Snowflake, Tableau, PowerBI, Git, Kubernetes, Docker, Linux, MongoDB, PostgreSQL} \\
-     \textbf{Frameworks}{: PyTorch, TensorFlow, Keras, Sklearn, XGBoost, Langchain, HuggingFace, Kafka, Hadoop, Spark, DBT}
+     \textbf{Languages}{: Python, SQL, R, Java, JavaScript, React, NodeJS, C\#, C++, Scala, Streamlit} \\
+     \textbf{Tools}{: Azure, GCP, AWS, Snowflake, Tableau, PowerBI, Git,  Docker, MongoDB, PostgreSQL} \\
+     \textbf{Frameworks}{: PyTorch, TensorFlow, Keras, Sklearn, Langchain, Kafka, Hadoop, Spark, DBT}
     }}
  \end{itemize}
 
