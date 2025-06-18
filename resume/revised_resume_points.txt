@@ -1,63 +1,31 @@
 <think>
-Alright, let's break this down step by step. The user wants me to act as an expert resume editor, focusing on integrating missing technologies from the job description into the resume by replacing less relevant ones. The job description emphasizes Python, SQL, relational databases (RedShift, Snowflake), data ingestion APIs (Facebook, Google), Docker, Kubernetes, Airflow, math/stats, event-based architectures, and scalable infrastructure. 
+Alright, let's tackle this step by step. The user wants me to edit their resume based on the job description's missing technologies. The main missing tech here is FastAPI. The job description emphasizes API development with FastAPI, which isn't present in the resume. 
 
-First, I need to identify the missing technologies in the resume compared to the job description. From the analysis, the missing ones are **RedShift**, **Facebook Data APIs**, and **Google Data APIs**. 
+First, I need to identify where in the resume I can replace a technology not mentioned in the job description with FastAPI. Looking at the resume points, the line "Utilized indexing for NoSQL (Azure) in C# REST APIs to optimize backend & reduce query latency by 70%" mentions C# and REST APIs. Since C# isn't in the job description, replacing it with FastAPI makes sense.
 
-Next, I'll go through each resume point starting from the least similar to the job description. The goal is to replace technologies present in the resume but not in the job description with the missing ones. Technologies that are already common between both should be mentioned 2-3 times.
+I should ensure that each missing technology (only FastAPI here) is added once. Other technologies in the resume but not in the job description (like C#, React, Tableau, etc.) can be replaced if needed, but since FastAPI is the only missing one, I focus there. 
 
-Looking at the resume points:
-
-1. **"Constructed a system that processes pupil images & attention span to detect drowsiness with correctness of 92%"**  
-   - This doesn't mention any specific technologies. Since it's the least similar, but there's nothing to replace here, I'll move on.
-
-2. **"Conducted A/B testing to enhance experience using React to boost the carousel click-through rate by 25%"**  
-   - **React** isn't in the job description. Replace **React** with **Facebook Data API** (one of the missing techs). Now, React is removed, and Facebook API is added.
-
-3. **"Integrated active training & fine-tuning to 7+ multi-agent RAG LLMs using Langchain/OpenAI embeddings"**  
-   - **Langchain** isn't in the job description. Replace with **Google Data API**. Now, Langchain is replaced.
-
-4. **"Assessed design variations of pre-existing LLMs in fraud detection & Q/A bots which increased 3% accuracy"**  
-   - No irrelevant techs here. Leave as is.
-
-5. **"Applied RAG for Q/A chatbot with ability to give quotes, check insurance coverage, and give tailored advice"**  
-   - No irrelevant techs. Leave.
-
-6. **"Engineered robust app using ML to read prescriptions, check coverage, corresponding price and availability"**  
-   - No specific techs mentioned. Leave.
-
-7. **"Performed regression and logistic modeling for statistical analysis in R/Python scripts & Excel (VBA)"**  
-   - **R** and **Excel (VBA)** aren't in the job description. Replace **R** with **RedShift** (missing tech). Now, R is replaced with RedShift.
-
-At this point, all missing technologies (RedShift, Facebook Data API, Google Data API) have been integrated. The remaining resume points either don't have replaceable technologies or are already aligned with the job description. Technologies like Python, SQL, Snowflake, Docker, Kubernetes, and Airflow are already present and mentioned multiple times, so no further changes are needed. 
-
-Final check ensures that overlapping technologies are mentioned 2-3 times, which they are. The process stops once all missing techs are addressed without unnecessary edits.
+After replacing C# with FastAPI in that line, I check if other technologies in the resume overlap with the job description. Python, Docker, CI/CD, NLP, etc., are already present, so no further changes are needed. The rest of the resume points stay the same as they either contain relevant tech or non-mentioned ones that don't conflict.
 </think>
 
-**Missing Technologies (with counts):**  
-- **RedShift** (1)  
-- **Facebook Data API** (1)  
-- **Google Data API** (1)  
+**Missing technologies (with counts):**  
+- **FastAPI** (Job Description: 1, Resume: 0)  
 
 ---
 
-**Revised Resume Points & Edits:**  
+**Revised Resume Points:**  
 
-1. **Conducted A/B testing to enhance experience using Facebook Data API to boost the carousel click-through rate by 25%**  
-   *(Original: "Conducted A/B testing to enhance experience using React...")*  
-   - **Replaced:** React ➔ **Facebook Data API**  
-
-2. **Integrated active training & fine-tuning to 7+ multi-agent RAG LLMs using Google Data API/OpenAI embeddings**  
-   *(Original: "Integrated active training & fine-tuning... Langchain/OpenAI embeddings")*  
-   - **Replaced:** Langchain ➔ **Google Data API**  
-
-3. **Performed regression and logistic modeling for statistical analysis in RedShift/Python scripts & Excel (VBA)**  
-   *(Original: "Performed regression and logistic modeling... R/Python scripts...")*  
-   - **Replaced:** R ➔ **RedShift**  
+1. **Original:** Utilized indexing for NoSQL (Azure) in **C# REST APIs** to optimize backend & reduce query latency by 70%  
+   **Revised:** Utilized indexing for NoSQL (Azure) in **FastAPI** to optimize backend & reduce query latency by 70%  
 
 ---
 
-**Key Overlap Enhancements:**  
-- **Python**, **SQL**, **Snowflake**, **Docker**, **Kubernetes**, and **Airflow** are already mentioned 2-3+ times.  
-- **Kafka** (event-based architecture) and **Spark** (scalable infrastructure) retained as relevant to job description.  
+**Changes Made:**  
+- Replaced **C#** (not in job description) with **FastAPI** (missing critical skill).  
+- **FastAPI** now appears once, aligning with the job’s API development focus.  
 
-**Stopped editing after addressing all missing technologies.**
+**Overlap Validation:**  
+- **Python**, **Docker**, **CI/CD**, **NLP**, **RAG frameworks** (Langchain), and **cloud platforms** (AWS/GCP/Azure) are already emphasized 2-3 times in the resume.  
+- Non-relevant technologies (e.g., C#, React, Tableau, C++) remain in other sections but do not conflict with priority overlaps.  
+
+No further edits needed—all missing technologies are addressed.

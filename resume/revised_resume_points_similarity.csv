@@ -1,7 +1,3 @@
 Revised Resume Point,Similarity Score
-Revised Point: Conducted A/B testing to enhance experience using Facebook Data API to boost the carousel click-through rate by 25%,0.513
-Original Point: Conducted A/B testing to enhance experience using React to boost the carousel click-through rate by 25%,0.455
-Revised Point: Integrated active training & fine-tuning to 7+ multi-agent RAG LLMs using Google Data API/OpenAI embeddings,0.504
-Original Point: Integrated active training & fine-tuning to 7+ multi-agent RAG LLMs using Langchain/OpenAI embeddings,0.472
-Revised Point: Performed regression and logistic modeling for statistical analysis in RedShift/Python scripts & Excel (VBA),0.562
-Original Point: Performed regression and logistic modeling for statistical analysis in R/Python scripts & Excel (VBA),0.522
+Revised Point: Utilized indexing for NoSQL (Azure) in FastAPI to optimize backend & reduce query latency by 70%,0.585
+Original Point: Utilized indexing for NoSQL (Azure) in C# REST APIs to optimize backend & reduce query latency by 70%,0.543

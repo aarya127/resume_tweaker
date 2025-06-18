@@ -1,15 +1,17 @@
-This position is for data engineering at thescore. Required Skills:
-About You
+AI Engineer at FocusKPI. Gain hands-on experience in designing and implementing NLP models for tasks such as text classification, sentiment analysis, and named entity recognition.
 
-A solid foundation in computer science, with strong competencies in data structures, distributed systems, algorithms, and software design
-Excellent communication skills.
-Experience with Python
-Experience in SQL and other Relational Databases
-Been part of a data-driven team
-Experience with Docker and Kubernetes
-Good knowledge of Math (e.g. data modeling/applied statistics)
-Experience with data ingestion APIs (e.g. Facebook, Google)
-Experience with Airflow
-Experience with RedShift, Snowflake or other SQL-based data warehouses
-Experience with Event-based architectures is a plus
-Experience building out a scalable infrastructure to fit the needs of a growing company
+Learn and apply Retrieval-Augmented Generation (RAG) frameworks integrated with vector-based solutions to enhance system performance.
+
+Build and maintain scalable APIs (e.g., using FastAPI) for real-world deployment of AI models.
+
+Develop expertise in containerization tools like Docker to streamline deployment and scalability.
+
+Gain practical experience in implementing CI/CD pipelines for automated testing, integration, and deployment to ensure reliable and efficient delivery of AI solutions.
+
+Acquire practical knowledge in data preprocessing, feature extraction, and building robust data pipelines for large-scale applications.
+
+Work on integrating ML models into end-to-end production systems, focusing on scalability and performance.
+
+Strengthen your software engineering skills, with exposure to tools like Python, FastAPI, and cloud platforms (AWS, Google Cloud, Azure).
+
+Enhance your collaboration and documentation skills by working in a dynamic, remote team environment.

@@ -30,7 +30,7 @@ prompt = (
 )
 
 # Print the prompt for debugging/inspection
-print("\n--- PROMPT TO IBM GRANITE MODEL ---\n")
+print("\n--- PROMPT TO DEEPSEEK MODEL ---\n")
 print(prompt)
 print("\n--- END PROMPT ---\n")
 
@@ -55,13 +55,18 @@ completion = client.chat.completions.create(
 )
 
 output_text = ""
+print("\n--- MODEL OUTPUT (streaming) ---\n")
 for chunk in completion:
     if hasattr(chunk, 'choices') and chunk.choices[0].delta.content is not None:
         output_text += chunk.choices[0].delta.content
+        print(chunk.choices[0].delta.content, end='', flush=True)
     elif isinstance(chunk, dict) and 'choices' in chunk and chunk['choices'][0]['delta']['content'] is not None:
         output_text += chunk['choices'][0]['delta']['content']
+        print(chunk['choices'][0]['delta']['content'], end='', flush=True)
     elif isinstance(chunk, str):
         output_text += chunk
+        print(chunk, end='', flush=True)
+print("\n--- END MODEL OUTPUT ---\n")
 
 # Print only the revised LaTeX resume (strip leading/trailing whitespace)
 latex_start = output_text.find('\\documentclass')
@@ -69,7 +74,9 @@ if latex_start != -1:
     latex_code = output_text[latex_start:]
 else:
     latex_code = output_text
+print("\n--- FINAL LATEX CODE ---\n")
 print(latex_code.strip())
+print("\n--- END FINAL LATEX CODE ---\n")
 
 # Save only the LaTeX code to clipboard (macOS only)
 try:

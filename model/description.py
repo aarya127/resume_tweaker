@@ -72,7 +72,7 @@ results["company_research"] = company_research_output
 # Third output: Position title and closest match
 completion_position_title = client_1.chat.completions.create(
     model="nvidia/llama-3.1-nemotron-ultra-253b-v1",
-    messages=[{"role": "user", "content": "which one of the following is the job title the closest to? Data Science, Data Engineering, Data Science+Engineering, Machine Learning Engineering or Software Engineer? Give me an answer from the options without an explanation. " + job_description}],
+    messages=[{"role": "user", "content": "which one of the following is the job title the closest to? Data Science, Data Engineer, Data Science+Engineering, Machine Learning Engineering or Software Engineer? Give me an answer from the options without an explanation. " + job_description}],
     temperature=1.00,
     top_p=0.01,
     max_tokens=512,

@@ -1,236 +1,253 @@
 <think>
-Okay, let's tackle this. The user wants a comparison between their resume and the job description's key technologies. First, I need to extract the technologies from both sources.
+Okay, let's tackle this. The user wants a comparison between their resume and the job description's key technologies. First, I need to parse the job description's skills and the resume's LaTeX code to extract the technologies mentioned.
 
-Starting with the job description. The key skills listed are: Python, SQL, relational databases (RedShift, Snowflake), data ingestion APIs (Facebook, Google), Docker, Kubernetes, Airflow, math (data modeling, stats), event-based architectures, scalable infrastructure. Also mentions computer science fundamentals, which are more concepts than technologies.
+Starting with the job description. The key skills listed include NLP, RAG frameworks, FastAPI, Docker, CI/CD, data preprocessing, ML model integration, Python, cloud platforms (AWS, GCP, Azure), collaboration tools, and software engineering with those tools. So the main technologies here are Python, FastAPI, Docker, CI/CD, NLP, RAG, AWS, GCP, Azure, and maybe specific frameworks like PyTorch or TensorFlow since they're mentioned in the resume.
 
-Now, looking at the resume's LaTeX code. The Technical Skills section lists Languages: Python, SQL, R, Java, JavaScript, React, NodeJS, C, C++, Scala, Streamlit. Tools: Azure, GCP, AWS, Snowflake, Tableau, PowerBI, Git, Kubernetes, Docker, MongoDB, PostgreSQL. Frameworks: PyTorch, TensorFlow, Keras, Sklearn, Langchain, Kafka, Hadoop, Spark, DBT.
+Now, looking at the resume's LaTeX code. The technical skills section lists Python, SQL, R, Java, JavaScript, React, NodeJS, C, C++, Scala, Streamlit. Tools include Azure, GCP, AWS, Snowflake, Tableau, PowerBI, Git, Kubernetes, Docker, MongoDB, PostgreSQL. Frameworks: PyTorch, TensorFlow, Keras, Sklearn, Langchain, Kafka, Hadoop, Spark, DBT.
 
-In the experience section, there's mention of C#, REST APIs, React, NLP models, Databricks, neural networks (CNN/RNNs), ETL, CI/CD, Azure, Spark, Git, DB2, Snowflake, Data Lake, Kafka, Hadoop (Hive), Airflow, PostgreSQL, Tableau, PowerBI, R, Excel (VBA), Angular, Falcon-40b LLM, HuggingFace, Node.js, React, HTML/CSS, AWS, Nvidia LLMs, Computer Vision (OpenCV), TensorFlow Lite, C++, etc.
+In the experience section, there's mention of Langchain, OpenAI embeddings, C#, REST APIs, GCP, React, NLP models, neural networks (CNN/RNNs), Azure, Spark, SQL, Git, Docker, C++, GEN AI models, Snowflake, Kafka, Hadoop, Hive, Airflow, PostgreSQL, R, Excel (VBA), Angular, Falcon-40b LLM, HuggingFace, Node.js, React, AWS, Nvidia LLMs, OpenCV, TensorFlow Lite, C++, etc.
 
-Projects include Angular, AWS, Node.js, React, TensorFlow Lite, C++, Python, PostgreSQL, machine learning.
+Projects include Angular, React, AWS, Node.js, etc.
 
-Now, mapping the job description techs to the resume. 
+So compiling all technologies from the resume: Python, SQL, R, Java, JavaScript, React, NodeJS, C, C++, Scala, Streamlit, Azure, GCP, AWS, Snowflake, Tableau, PowerBI, Git, Kubernetes, Docker, MongoDB, PostgreSQL, PyTorch, TensorFlow, Keras, Sklearn, Langchain, Kafka, Hadoop, Spark, DBT, C#, REST APIs, GEN AI, Airflow, Excel VBA, Angular, Falcon-40b, HuggingFace, OpenCV, TensorFlow Lite.
 
-Overlap would be Python (appears in both), SQL (both), Snowflake (both), Docker (both), Kubernetes (both), Airflow (both), Kafka (job mentions event-based architectures, which Kafka is part of), Spark (scalable infrastructure), Hadoop (scalable infra?), math/stats (mentioned in resume courses like Stochastic Processes, Linear Models, and projects involving models).
+Now, comparing with the job description's required tech:
 
-Wait, the job description's math requirement is data modeling and applied stats. The resume has Neural Networks, Linear Models, Stochastic Processes courses, and projects with statistical analysis, regression, logistic modeling. So that's covered.
+Overlap would be Python (definitely in both), Docker, NLP (mentioned in resume under experience), PyTorch, TensorFlow, Langchain (since RAG is part of job desc and Langchain is used for RAG in resume), cloud platforms (AWS, GCP, Azure), CI/CD (mentioned in resume as CI/CD workflows), FastAPI (is FastAPI in the resume? Looking at the resume's technical skills, under frameworks, I don't see FastAPI. The job description requires FastAPI for API development. The resume mentions C# REST APIs and FastAPI isn't listed. So FastAPI is missing.
 
-Event-based architectures: Kafka is mentioned in the resume, which is an event streaming platform. So that's a plus.
+RAG frameworks: The job description specifies RAG frameworks. The resume mentions using Langchain for RAG with OpenAI embeddings, so Langchain might count here. But does the job description consider Langchain as part of RAG? Probably, so that's an overlap.
 
-Scalable infrastructure: Experience with Spark, Hadoop, Data Lake, Kafka, which are used for big data and scalability. So that's covered.
+Other job tech: Ruby, Swift? Not mentioned in job description. Wait, the job description's key skills don't mention Ruby or Swift. Wait, looking back, the job description's key skills are NLP, RAG, FastAPI, Docker, CI/CD, data preprocessing, ML integration, software engineering (Python, FastAPI, cloud), collaboration, cloud platforms. So missing technologies from the resume compared to job description would be FastAPI, maybe specific mention of RAG frameworks (though Langchain is there), and perhaps Ruby or Swift if they were in the job description, but they aren't. Wait, the initial example in the user's query had Ruby and Swift as missing, but in the actual job description provided, those aren't listed. Maybe the user included an example, but the actual job description doesn't have those. So perhaps the user made a mistake in the example.
 
-Now, missing technologies from the job description: The job mentions data ingestion APIs like Facebook or Google. The resume has experience with REST APIs (C#), but specific Facebook/Google APIs aren't listed. Also, RedShift is mentioned in the job as a relational DB example; resume has Snowflake, PostgreSQL, MongoDB, but not RedShift. 
+Wait, the user's job description key skills are:
 
-Ruby and Swift aren't in the job description, but the initial example had them. Wait, the job description doesn't mention Ruby or Swift. Wait, the user's initial example response included Ruby and Swift, but looking at the actual job description provided, those aren't listed. Maybe the user had a different job description before? Wait, no, the user provided the job description key skills as:
+1. NLP
 
-1. Computer Science Foundation
-2. Python
-3. SQL and Relational Databases (RedShift, Snowflake, etc.)
-4. Data Ingestion APIs (Facebook, Google)
-5. Docker and Kubernetes
-6. Airflow
-7. Math (data modeling, stats)
-8. Event-based architectures (a plus)
-9. Scalable infrastructure
+2. RAG frameworks
 
-So the missing technologies in the resume compared to the job description would be data ingestion APIs specific to Facebook or Google, RedShift (since the resume has Snowflake and PostgreSQL but not RedShift). The job doesn't mention Ruby or Swift, so maybe the initial example was a mistake. 
+3. API development with FastAPI
 
-Wait, the user's sample answer included Ruby and Swift under missing, but the actual job description here doesn't have those. Maybe the user made a mistake in their example. So in this case, the key missing would be Facebook/Google data ingestion APIs and RedShift.
+4. Docker
 
-Additionally, the job mentions "relational databases such as RedShift, Snowflake..." The resume has Snowflake and PostgreSQL, so RedShift is missing. 
+5. CI/CD
 
-Technologies in the resume not in the job description: R, Java, JavaScript, React, NodeJS, C, C++, Scala, Streamlit, Azure, GCP, AWS, Tableau, PowerBI, Git, MongoDB, PyTorch, TensorFlow, Keras, Sklearn, Langchain, Hadoop, Spark, DBT, C#, REST APIs, React, NLP models, Databricks, neural networks (CNN/RNNs), CI/CD, DB2, Data Lake, Hive, Excel (VBA), Angular, Falcon-40b LLM, HuggingFace, Node.js, HTML/CSS, Nvidia LLMs, Computer Vision (OpenCV), TensorFlow Lite, etc.
+6. Data preprocessing
 
-So the resume has a lot of extra techs not mentioned in the job description. 
+7. ML model integration
 
-Now, compiling the counts:
+8. Software engineering with Python, FastAPI, cloud
 
-Overlap:
-- Python: Resume has multiple mentions (Technical Skills, experience sections), job has 1. So maybe (many vs 1). But in the job description, Python is listed once as a key skill. The resume lists Python in languages, and in multiple experiences. So count as (1 in job vs multiple in resume, but for simplicity, maybe 1 vs 1? Or count occurrences. Wait, the user's example counts occurrences. So need to count how many times each tech appears in resume vs job.
+9. Collaboration
 
-But the job description lists each key skill once. So for example, Python is once in the job. In the resume, Python is in Technical Skills and mentioned in several experience bullets. So occurrences in resume: let's count how many times each tech is mentioned.
+10. Cloud platforms (AWS, GCP, Azure)
 
-But this might be time-consuming. Alternatively, since the job lists each tech once, and the resume may have them once in skills and multiple times in experience. But the user's example counts resume vs job as 1 vs 1, 2 vs 1, etc. So perhaps the count is based on presence in the skills section and experience, but the exact number of mentions.
+So the key technologies from the job description are: NLP, RAG frameworks, FastAPI, Docker, CI/CD, data preprocessing, ML integration, Python, FastAPI, AWS, GCP, Azure.
 
-Alternatively, the user might just want a binary presence: if it's in the resume at all vs job. But the user's example shows counts like Java (1 vs 1), implying that in the resume it's mentioned once, job once. But in reality, the job lists each key tech once, and the resume may have multiple mentions.
+Now, resume has Python, Docker, CI/CD (mentioned in experience as CI/CD workflows), NLP (mentioned in experience as NLP model), Langchain (related to RAG), cloud platforms (AWS, GCP, Azure), PyTorch, TensorFlow. 
 
-But given the user's example, perhaps the count is the number of times the technology is listed in the resume's skills and experience vs once in the job. But this is unclear. The user's instruction says "number of occurrences in my resume vs job description". So need to count how many times each tech is mentioned in the resume and how many times in the job description.
+Missing from resume: FastAPI (job description mentions FastAPI explicitly for API development, but resume has C# REST APIs and mentions FastAPI in the example? Wait, in the resume's technical skills under frameworks, FastAPI isn't listed. The user's resume mentions "C# REST APIs" but not FastAPI. So FastAPI is a missing technology. Also, RAG frameworks: the resume uses Langchain which is a RAG framework, so maybe that's covered. But the job description might expect specific RAG frameworks, but since Langchain is a part of that, it's okay. 
 
-But the job description lists each key tech once. For example, Python is mentioned once in the job. In the resume, Python is in the Technical Skills under Languages, and in several experience bullets: "Python (pytorch)", "Python, Spark, SQL & Git", "R/Python scripts & Excel (VBA)", etc. So Python is mentioned multiple times. Similarly, SQL is in skills and multiple experience bullets.
+Wait, the job description says "Retrieval-Augmented Generation (RAG) frameworks: Knowledge and experience in integrating RAG frameworks with vector-based solutions". The resume mentions "Integrated ... multi-agent RAG LLMs using Langchain/OpenAI embeddings". So Langchain is a RAG framework, so that's covered. 
 
-But the user's example has "Java (1 vs 1)" which suggests that in the resume it's mentioned once and once in the job. But in the job description provided, Java isn't listed. Wait, the job description's key skills don't include Java. The user's example might be from a different scenario. So perhaps the user made a mistake in their example, but we need to follow the actual job description provided.
+Other missing tech: The job description requires FastAPI, which isn't in the resume. The resume uses C# for APIs, but not FastAPI. So FastAPI is missing. Also, the job description mentions software engineering with tools like Python, FastAPI, cloud. So FastAPI is a key missing item.
 
-So, for the actual job description provided:
+Additionally, the job description mentions "ML model integration into end-to-end production systems", which the resume does have experience with, like deploying models in Azure, etc. 
 
-Job Techs and their counts (each is 1):
+Now, technologies in the resume not in the job description: The job description doesn't mention React, NodeJS, C, C++, Scala, Streamlit, Snowflake, Tableau, PowerBI, Kubernetes, MongoDB, Kafka, Hadoop, Spark, DBT, C#, REST APIs (though the job wants FastAPI), GEN AI models, Airflow, Excel VBA, Angular, Falcon-40b, HuggingFace, OpenCV, etc.
 
-Python, SQL, RedShift, Snowflake, Facebook APIs, Google APIs, Docker, Kubernetes, Airflow, Math (data modeling, stats), event-based architectures (as a plus), scalable infrastructure.
+So for the "Technologies in Resume Not in Job Description" section, these would be listed.
 
-Resume Techs:
+Now, let's structure the answer:
 
-From Technical Skills:
+Overlap: Python, Docker, CI/CD, NLP, RAG (via Langchain), PyTorch, TensorFlow, cloud platforms (AWS, GCP, Azure), Langchain, data preprocessing (implied by ETL and data pipelines), ML model integration.
 
-Languages: Python, SQL, R, Java, JavaScript, React, NodeJS, C, C++, Scala, Streamlit.
+Wait, the resume mentions "data pipelines (ETL)" which relates to data preprocessing. So data preprocessing is covered.
 
-Tools: Azure, GCP, AWS, Snowflake, Tableau, PowerBI, Git, Kubernetes, Docker, MongoDB, PostgreSQL.
+But the job description also mentions "FastAPI" which is missing in the resume. Also, the resume uses C# for APIs, but the job wants FastAPI.
 
-Frameworks: PyTorch, TensorFlow, Keras, Sklearn, Langchain, Kafka, Hadoop, Spark, DBT.
+So the key missing technologies are FastAPI. Are there others? The job description doesn't mention Ruby or Swift, so maybe the user's example was hypothetical. But according to the provided job description, the missing tech is FastAPI.
 
-Experience mentions:
+Wait, let me check again. The job description's key skills:
 
-C#, REST APIs, React, NLP, Databricks, neural networks (CNN/RNNs), ETL, CI/CD, Azure, Spark, Git, DB2, Snowflake, Data Lake, Kafka, Hadoop (Hive), Airflow, PostgreSQL, Tableau, PowerBI, R, Excel (VBA), Angular, Falcon-40b LLM, HuggingFace, Node.js, AWS, Nvidia LLMs, OpenCV, TensorFlow Lite, C++.
+3. API development: Expertise in FastAPI.
 
-Projects: Angular, AWS, Node.js, React, TensorFlow Lite, C++, Python, PostgreSQL, machine learning.
+8. Software engineering: Python, FastAPI, cloud.
 
-Now, mapping:
+So FastAPI is explicitly mentioned. The resume does not have FastAPI listed anywhere. The resume mentions C# REST APIs, but not FastAPI. So FastAPI is a key missing technology.
 
-Overlap:
+Another point: the job description mentions "vector-based solutions" in RAG frameworks. The resume uses OpenAI embeddings, which are vector-based, so that's covered.
 
-- Python: Job 1, Resume multiple (skills + experiences) → count as 1 vs 1? Or actual count. The user's example seems to count once even if mentioned multiple times. Maybe the user wants presence, not frequency. But the user's instruction says "number of occurrences". Hmm. For example, in the user's example, Java is (1 vs 1), implying that in the resume it's mentioned once and once in the job. But in the actual job here, Java isn't listed. So perhaps the example was from a different job description. 
+Another possible missing tech: The job requires "building and maintaining scalable APIs using FastAPI". Since the resume uses C# and REST APIs but not FastAPI, that's a gap.
 
-But given the actual job description here, the key technologies are as listed. So for overlap:
+Are there other missing technologies? The job description doesn't mention Ruby or Swift, so those examples in the initial query might be placeholders. So in the actual comparison, the missing tech is FastAPI.
 
-Python (resume has it in skills and multiple experiences, job 1) → (many vs 1). But how to count? Maybe the resume's Technical Skills section lists each language once, and experiences mention them again. But the user's example counts Java as 1 vs 1. So perhaps the count is based on the Technical Skills section and explicit mentions in experience. Alternatively, just presence. The user might want a simple count, so perhaps just 1 if present in resume, 1 in job. But the user's example shows C/C++ (2 vs 1), implying that in the resume it's mentioned twice. So need to count the number of times each tech is mentioned in the resume.
+Wait, the user's example included Ruby and Swift, but in the actual job description provided, those aren't listed. So perhaps the user made a mistake in their example. Therefore, in the actual analysis, the missing technologies from the resume would be FastAPI.
 
-This is complicated. Let's proceed step by step.
-
-First, list all technologies in the job description:
-
-- Python (1)
-- SQL (1)
-- RedShift (1)
-- Snowflake (1)
-- Facebook APIs (1)
-- Google APIs (1)
-- Docker (1)
-- Kubernetes (1)
-- Airflow (1)
-- Math (data modeling, applied stats) (1)
-- Event-based architectures (1, as a plus)
-- Scalable infrastructure (1)
-
-Now, resume technologies count:
-
-Python: Technical Skills (1) + experiences: "Python (pytorch)", "Python, Spark, SQL & Git", "R/Python scripts & Excel (VBA)", "Python, SQL, PostgreSQL, Machine Learning" → total 4 mentions? Or just 1 in skills and others are part of experience bullets. It's unclear. The user's example counts Java as 1 in resume. Maybe the count is based on the Technical Skills section only. Let's check the user's resume LaTeX:
-
-In the Technical Skills section under Languages: Python, SQL, R, Java, JavaScript, React, NodeJS, C, C++, Scala, Streamlit. So each listed once. Tools: Snowflake, Docker, Kubernetes. Frameworks: Kafka, Hadoop, Spark. Airflow is mentioned in experience: "ETL scheduling scripts to Airflow". So Airflow is in experience but not in skills. 
-
-So for the resume, count occurrences in Technical Skills and any explicit mentions in experience/projects. For example, Airflow is mentioned once in experience. Docker and Kubernetes are in Technical Skills and possibly in experience. 
-
-But this could get complicated. To simplify, perhaps count the number of times each tech is mentioned in the resume, regardless of section. For example:
-
-Python: Technical Skills (1) + experiences (multiple times) → let's say 4 times.
-
-But the user's example counts C/C++ as 2 vs 1, implying that in the resume it's mentioned twice. In the provided resume, C and C++ are both in the Languages list, so that's two mentions (C and C++). But the job description in the user's example had C/C++ once. 
-
-Given that, perhaps the count is based on the number of times the technology is listed in the resume, even if in the same category. For example, in the resume's Technical Skills, Languages include C and C++ as separate entries. So that's two mentions. But the job description might have C/C++ as one. So in the user's example, C/C++ is (2 vs 1). 
-
-Applying that to the current job description:
-
-Job has Python (1), SQL (1), RedShift (1), Snowflake (1), Facebook APIs (1), Google APIs (1), Docker (1), Kubernetes (1), Airflow (1), Math (1), Event-based (1), Scalable infra (1).
-
-Resume:
-
-Python: Technical Skills (1) + experiences (Globys, Health Canada, Gore, RBC, Projects) → let's say 5 mentions.
-
-SQL: Technical Skills (1) + experiences (multiple: Gore, RBC, Projects) → 4 mentions.
-
-Snowflake: Technical Skills (1) + RBC experience (1) → 2.
-
-Docker: Technical Skills (1) + IBM experience (1) → 2.
-
-Kubernetes: Technical Skills (1).
-
-Airflow: RBC experience (1).
-
-Kafka: Technical Skills (Frameworks) (1) + RBC experience (1) → 2.
-
-Event-based architectures: Kafka is part of this, so maybe count Kafka as event-based. So event-based is present via Kafka.
-
-Scalable infrastructure: Experience with Spark, Hadoop, Data Lake, Kafka → mentioned in experiences.
-
-Math: Coursework includes Linear Models, Stochastic Processes, which relates to stats. So math is covered.
-
-Now, missing in resume:
-
-- RedShift (job has it, resume doesn't)
-- Facebook/Google data ingestion APIs (resume has REST APIs but not specific to Facebook/Google)
-- Maybe specific relational databases like RedShift.
-
-Technologies in resume not in job: R, Java, JavaScript, React, NodeJS, C, C++, Scala, Streamlit, Azure, GCP, AWS, Tableau, PowerBI, Git, MongoDB, PyTorch, TensorFlow, Keras, Sklearn, Langchain, Hadoop, Spark, DBT, C#, REST APIs, NLP, Databricks, neural networks, CI/CD, DB2, Data Lake, Hive, Excel VBA, Angular, Falcon-40b, HuggingFace, Node.js, HTML/CSS, Nvidia LLMs, OpenCV, TensorFlow Lite, etc.
+Additionally, the job description mentions "ML model integration into production systems", which the resume does have (deployed models in Azure, etc.), so that's covered.
 
 So compiling the lists:
 
-Overlap (Resume vs Job Description):
+Overlap:
 
-- **Python** (5 vs 1)  
-- **SQL** (4 vs 1)  
-- **Snowflake** (2 vs 1)  
-- **Docker** (2 vs 1)  
-- **Kubernetes** (1 vs 1)  
-- **Airflow** (1 vs 1)  
-- **Kafka** (2 vs 1) [assuming Kafka counts for event-based architectures]  
-- **Spark** (1 vs 1) [for scalable infrastructure]  
-- **Hadoop** (1 vs 1) [scalable infra]  
-- **Math/Stats** (1 vs 1)  
+- Python (resume has it in skills, job requires it)
+- Docker (both have)
+- CI/CD (resume mentions CI/CD workflows)
+- NLP (resume has NLP model experience)
+- RAG frameworks (Langchain in resume)
+- PyTorch, TensorFlow (resume has these)
+- Cloud platforms (AWS, GCP, Azure in resume)
+- Data preprocessing (ETL/data pipelines in resume)
+- ML model integration (resume has deploying models)
+- Langchain (counts under RAG)
+- Kubernetes (job doesn't mention it, but resume has it. Wait, job mentions Docker and CI/CD, but Kubernetes isn't in the job's key skills. So maybe Kubernetes is extra in the resume.
 
-Key Technologies Missing in Resume (Job Description):
+Wait, the job's key skills include Docker and CI/CD, but not Kubernetes. So Kubernetes would be in the resume but not in the job description.
 
-- **RedShift** (0 vs 1)  
-- **Facebook Data APIs** (0 vs 1)  
-- **Google Data APIs** (0 vs 1)  
+So for Overlap, the technologies present in both:
 
-Technologies in Resume Not in Job Description:
+Python (resume: in skills; job: mentioned in software engineering)
 
-- **R** (1 vs 0)  
-- **Java** (1 vs 0)  
-- **JavaScript** (1 vs 0)  
-- **React** (2 vs 0)  
-- **NodeJS** (2 vs 0)  
-- **C** (1 vs 0)  
-- **C++** (2 vs 0)  
-- **Scala** (1 vs 0)  
-- **Streamlit** (1 vs 0)  
-- **Azure** (2 vs 0)  
-- **GCP** (1 vs 0)  
-- **AWS** (2 vs 0)  
-- **Tableau** (2 vs 0)  
-- **PowerBI** (2 vs 0)  
-- **Git** (2 vs 0)  
-- **MongoDB** (1 vs 0)  
-- **PyTorch** (1 vs 0)  
-- **TensorFlow** (1 vs 0)  
-- **Keras** (1 vs 0)  
-- **Sklearn** (1 vs 0)  
-- **Langchain** (1 vs 0)  
-- **DBT** (1 vs 0)  
-- **C#** (1 vs 0)  
-- **REST APIs** (1 vs 0)  
-- **NLP** (1 vs 0)  
-- **Databricks** (1 vs 0)  
-- **Neural Networks** (1 vs 0)  
-- **CI/CD** (1 vs 0)  
-- **DB2** (1 vs 0)  
-- **Data Lake** (1 vs 0)  
-- **Hive** (1 vs 0)  
-- **Excel VBA** (1 vs 0)  
-- **Angular** (1 vs 0)  
-- **Falcon-40b LLM** (1 vs 0)  
-- **HuggingFace** (1 vs 0)  
-- **HTML/CSS** (1 vs 0)  
-- **Nvidia LLMs** (1 vs 0)  
-- **OpenCV** (1 vs 0)  
-- **TensorFlow Lite** (1 vs 0)  
+Docker (both)
 
-But the user wants a short and simple list, so maybe group some or mention the most prominent ones. For example, in Technologies in Resume Not in Job Description, list the main ones like R, Java, JavaScript, React, NodeJS, C/C++, Scala, Azure, AWS, etc.
+CI/CD (resume: mentioned in experience; job: listed)
 
-But the user's example included Perl and COBOL as resume techs not in the job. In this case, the resume has many techs not in the job, so the list will be long. However, the user might prefer a concise list, highlighting the most relevant or numerous ones.
+NLP (resume: experience with NLP model; job: required)
 
-Alternatively, count how many times each tech is mentioned in the resume and list those with higher counts first. For example, React is mentioned in Technical Skills and projects, so 2 times. NodeJS similarly. 
+RAG frameworks (resume: Langchain; job: RAG frameworks)
 
-But given the user's instruction for a short and simple list, perhaps list the top 5-10 in each category.
+PyTorch, TensorFlow (resume: frameworks; job: implied via ML model integration)
 
-Finalizing:
+Cloud platforms (AWS, GCP, Azure in both)
 
-**Overlap (Resume vs Job Description):**  
-- **Python** (5 vs 1)  
+Data preprocessing (resume: ETL/data pipelines; job: data preprocessing)
+
+ML model integration (resume: deploying models; job: required)
+
+Langchain (part of RAG)
+
+Now, counting occurrences:
+
+But the user wants the number of occurrences in resume vs job. For example, Python might be mentioned multiple times in the resume. Let's check:
+
+In the resume's technical skills, Python is listed under Languages. In experience, Python is mentioned in multiple places (Globys, Health Canada, Gore Mutual, IBM, RBC, Projects). Let's count:
+
+Technical Skills: Python (1)
+
+Experience:
+
+Globys: Python (pytorch mentioned)
+
+Health Canada: Python (mentioned in A/B testing with React)
+
+Gore Mutual: Python, Spark, SQL, Git
+
+IBM: C++ & Docker, Python
+
+RBC: Python scripts
+
+Projects: Python in multiple projects.
+
+So Python is mentioned multiple times, but for the count, maybe just once in skills and multiple in experience. But the user probably wants the count as the number of times each tech is listed in resume vs job description. The job description mentions Python in points 3 (FastAPI), 8 (Python as a tool), and others. But for simplicity, maybe count once in job description. But the user's example shows counts like Java (1 vs 1). So perhaps count the number of times each tech is explicitly mentioned in each.
+
+But this could be time-consuming. Alternatively, take the presence in each section. For example, if a technology is listed in the resume's skills section and experience, count the total mentions. But the user might prefer a simpler approach, counting once if present in either skills or experience.
+
+Alternatively, the user's example shows counts like Java (1 vs 1), implying that even if it's mentioned multiple times in the resume, it's counted as 1. But maybe the user wants the actual number of occurrences. However, given the complexity, perhaps the assistant should list the presence (1 if present in resume, 1 in job description) unless there are multiple explicit mentions.
+
+But the job description lists Python as part of software engineering skills (point 8), and in API development (point 3). So Python is mentioned multiple times. But for the purpose here, perhaps count once in job description. Similarly, in the resume, Python is in skills and multiple experiences, but count as 1 in resume vs 1 in job.
+
+But the user's example has "Java (1 vs 1)", which suggests that even if mentioned multiple times in the resume, it's counted once. So perhaps the assistant should just note if the technology is present in either resume or job description, with a count of 1 for each, unless there are multiple explicit mentions.
+
+Alternatively, the user might want the number of times each technology is listed in the resume and the job description. For example, if the job description mentions Python 3 times, and the resume mentions it 5 times, then (5 vs 3). But given the time constraints, perhaps it's better to check how many times each key tech is mentioned in the resume and the job description.
+
+But this requires parsing the entire resume text for occurrences. For example, in the resume, Python is in the skills section and multiple experience sections. Let's count:
+
+Resume's Technical Skills: Python (1)
+
+Experience:
+
+- Globys: Python (pytorch) (1)
+- Health Canada: Python (1)
+- Gore Mutual: Python (1)
+- IBM: Python (1)
+- RBC: Python scripts (1)
+- Projects: Python mentioned in several projects (at least 3 times)
+
+Total in resume: 1 (skills) + 5 (experience) + 3 (projects) = 9? But that's too detailed. The user probably wants a simpler count, perhaps 1 if present in skills or experience, but the example shows "Java (1 vs 1)" which might be a presence count.
+
+Alternatively, the user's example might have counted the number of times each technology is listed in the resume's skills section vs the job description. For instance, in the resume's skills, Java is listed once, and the job description has it once. But in the actual case, the job description doesn't mention Java. Wait, the user's example includes Java as an overlap, but in the provided job description, Java isn't listed. So perhaps the example is hypothetical.
+
+In the actual job description provided, the key technologies are Python, FastAPI, Docker, CI/CD, NLP, RAG, cloud platforms (AWS, GCP, Azure), data preprocessing, ML integration, etc. The resume includes Python, Docker, CI/CD, NLP, RAG (via Langchain), cloud platforms, data preprocessing, ML integration.
+
+So the overlap would be:
+
+- Python (1 vs 1)
+- Docker (1 vs 1)
+- CI/CD (1 vs 1)
+- NLP (1 vs 1)
+- RAG frameworks (1 vs 1) [Langchain as RAG]
+- PyTorch (1 vs 0) [Job description doesn't explicitly mention PyTorch, but it's part of ML model integration? Maybe not. So PyTorch would be in resume but not in job description.
+
+Wait, the job description mentions "proficiency in designing and implementing NLP models", which could involve PyTorch or TensorFlow, but they aren't explicitly listed. The job's key skills don't mention specific ML frameworks beyond NLP and RAG. So PyTorch and TensorFlow are in the resume but not explicitly in the job description. Therefore, they would be in the "Technologies in Resume Not in Job Description" section.
+
+So adjusting the overlap:
+
+Overlap would be technologies explicitly mentioned in both. The job description mentions Python, FastAPI, Docker, CI/CD, NLP, RAG frameworks, data preprocessing, ML model integration, cloud platforms (AWS, GCP, Azure).
+
+Resume has Python, Docker, CI/CD, NLP, RAG (Langchain), data preprocessing (via ETL), ML model integration, cloud platforms.
+
+But FastAPI is missing in the resume. So the overlap would include:
+
+- Python (1 vs 1)
+- Docker (1 vs 1)
+- CI/CD (1 vs 1)
+- NLP (1 vs 1)
+- RAG frameworks (1 vs 1)
+- Data preprocessing (1 vs 1)
+- ML model integration (1 vs 1)
+- Cloud platforms (AWS, GCP, Azure) (1 vs 1)
+
+But the resume's technical skills list AWS, GCP, Azure under Tools, so that's a match.
+
+Now, the key technologies missing in the resume from the job description would be FastAPI (0 vs 1), since the job requires FastAPI for API development, and the resume uses C# and REST APIs but not FastAPI.
+
+Technologies in the resume not in the job description: React, NodeJS, C, C++, Scala, Streamlit, Snowflake, Tableau, PowerBI, Kubernetes, MongoDB, Kafka, Hadoop, Spark, DBT, C#, REST APIs, GEN AI models, Airflow, Excel VBA, Angular, Falcon-40b, HuggingFace, OpenCV, TensorFlow Lite, etc.
+
+So compiling the lists:
+
+**Overlap (Resume vs Job Description):**
+- **Python** (1 vs 1)
+- **Docker** (1 vs 1)
+- **CI/CD** (1 vs 1)
+- **NLP** (1 vs 1)
+- **RAG frameworks** (1 vs 1) [Langchain]
+- **Data preprocessing** (1 vs 1)
+- **ML model integration** (1 vs 1)
+- **Cloud platforms (AWS, GCP, Azure)** (1 vs 1)
+
+**Key Technologies Missing in Resume (Job Description):**
+- **FastAPI** (0 vs 1)
+
+**Technologies in Resume Not in Job Description:**
+- **C/C++** (2 vs 0) [C and C++ mentioned in skills and experience]
+- **Java** (1 vs 0)
+- **JavaScript** (1 vs 0)
+- **React** (1 vs 0)
+- **NodeJS** (1 vs 0)
+- **Scala** (1 vs 0)
+- **Streamlit** (1 vs 0)
+- **Snowflake** (1 vs 0)
+- **Tableau** (1 vs 0)
+- **PowerBI** (1 vs 0)
+- **Kubernetes** (1 vs 0)
+- **MongoDB** (1 vs 0)
+- **Kafka** (1 vs 0)
+- **Hadoop** (1 vs 0)
+- **Spark** (1 vs 0)
+- **DBT** (1 vs 0)
+- **C#** (1 vs 0)
+- **REST APIs** (1 vs 0) [though job requires FastAPI]
+- **GEN AI models** (1 vs 0)
+- **Airflow** (1 vs 0)
+- **Excel VBA** (1 vs 0)
+- **Angular** (1 vs 0)
+- **Falcon
