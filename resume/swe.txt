@@ -120,7 +120,7 @@
 \section{Technical Skills}
  \begin{itemize}[leftmargin=0.15in, label={}]
     \small{\item{
-     \textbf{Languages}{: Python, SQL, R, Java, JavaScript, TypeScript, C++, C\#, Scala} \\
+     \textbf{Languages}{: Python, SQL, R, Java, JavaScript, TypeScript, C++, C\#, Swift} \\
      \textbf{Tools}{: Azure, GCP, AWS, Snowflake, Git, Kubernetes, Docker, PostgreSQL, NoSQL, MongoDB} \\
      \textbf{Frameworks}{: NodeJS, React, PyTorch, TensorFlow, Langchain, Kafka, Hadoop, Spark}
     }}
@@ -160,55 +160,56 @@
       {Globys}{April 2025 - Present}
       {Software Engineer Intern (Machine Learning)}{Seattle, WA}
       \resumeItemListStart
-        \resumeItem{Integrated active training \& fine-tuning to \textbf{10+ multi-agent RAG LLMs} using Langchain/OpenAI embeddings}
-        \resumeItem{Utilized indexing for NoSQL (Azure) in \textbf{C\# REST APIs} to optimize backend \& reduce query latency by \textbf{70\%}}
-        \resumeItem{Conducted A/B testing to enhance experience using \textbf{React} to boost the carousel click-through rate by \textbf{20\%}}
+        \resumeItem{Utilized indexing for NoSQL (Azure) in C\# REST APIs to optimize backend \& reduce query latency by 70\%}
+        \resumeItem{Integrated active training \& fine-tuning to 10+ multi-agent RAG LLMs using Langchain/OpenAI embeddings}
+        \resumeItem{Conducted A/B testing enhancing experience using React/Javascript to boost carousel click-through rate by 20\%}
       \resumeItemListEnd   
       
     \resumeSubheading
       {Health Canada}{September 2024 -- December 2024}
       {Data Science Intern}{Toronto, ON}
       \resumeItemListStart 
-        \resumeItem{Implemented an \textbf{NLP model} to assess query complexities saving hosting costs by \textbf{\$500,000+} in Databricks}
-        \resumeItem{Created \textbf{5+ deep learning} projects using \textbf{neural networks} (CNN/RNNs) for projects in image/text domains}
-        \resumeItem{Established time series models such as LSTM, Prophet \& XGBoost for forecasting projects with \textbf{97\%+ accuracy}}
+        \resumeItem{Implemented an NLP model to assess query complexities saving hosting costs by \$500,000+ in Databricks}
+        \resumeItem{Created 5+ deep learning projects using neural networks (CNN/RNNs) for projects in image/text domains}
+        \resumeItem{Established time series models such as LSTM, Prophet \& XGBoost for forecasting projects with 97\%+ accuracy}
       \resumeItemListEnd
       
     \resumeSubheading
       {IBM}{July 2023 -- August 2023}
       {Software Engineer Intern (Machine Learning)}{New York, ON}
       \resumeItemListStart 
-        \resumeItem{Developed file processors in \textbf{Git, C++ \& Docker} which improved RAG model performance for 10+ file types}
-        \resumeItem{Conducted \textbf{prompt tuning \& prompt engineering} on watsonx \textbf{GEN AI} models to enhance human interaction}
-        \resumeItem{Assessed design variations of pre-existing LLMs in fraud detection \& Q/A bots which \textbf{increased 3\% accuracy}}
+        \resumeItem{Developed file processors in C++ \& Docker which improved RAG model performance for 10+ file types}
+        \resumeItem{Conducted prompt tuning \& prompt engineering on watsonx GEN AI models to enhance human interaction}
+        \resumeItem{Orchestrated RAG pipeline using Langchain with Pinecone/FAISS vector stores cutting response times by 60\%}
       \resumeItemListEnd
       
     \resumeSubheading
       {RBC}{May 2023 -- August 2023}
       {Data Engineer Intern}{Mississauga, ON}
       \resumeItemListStart
-        \resumeItem{Identified various methods to transition data foundation from \textbf{DB2} to \textbf{Azure} to increase user flexibility}
-        \resumeItem{Accelerated data pipelines by validating 25+ data sources in \textbf{Data Lake, Kafka, Hadoop (Hive) \& SQL}}
-        \resumeItem{Deployed \textbf{20+ data pipelines (ETL) \& 10+ CI/CD workflows} to \textbf{Azure} using Python, Spark, SQL \& Git}
+        \resumeItem{Identified various methods to transition data foundation from DB2 to Snowflake to increase user flexibility}
+        \resumeItem{Accelerated data pipelines by validating 25+ data sources in Data Lake, Kafka, Hadoop (Hive) \& SQL}
+        \resumeItem{Deployed 20+ data pipelines (ETL) \& 10+ CI/CD workflows to Azure using Python, Spark \& Git}
       \resumeItemListEnd
       
     \resumeSubheading
       {RBC}{May 2022 -- August 2022}
       {Software Engineer Intern}{Mississauga, ON}
       \resumeItemListStart
-        \resumeItem{Designed a caching layer with \textbf{PostgreSQL} optimizing load times reducing latency for \textbf{4,000,000+ users}}
-        \resumeItem{Built 25+ REST API and backend features using \textbf{TypeScript} and \textbf{MongoDB} serving 2 million requests a month}
+        \resumeItem{Designed a caching layer with PostgreSQL optimizing load times reducing latency for 4,000,000+ users}
+        \resumeItem{Built 25+ REST API and backend features using TypeScript and MongoDB serving 2 million requests a month}
       \resumeItemListEnd   
 
     \resumeSubheading
       {UWAFT}{January 2022 -- April 2022}
       {Software Engineer Intern}{Mississauga, ON}
       \resumeItemListStart
-        \resumeItem{Managed the infotainment software application which received a \textbf{98\%} satisfaction rate amongst \textbf{1,000+ users}}
-        \resumeItem{Refactored back-end services using \textbf{Python}, optimizing API response times and enhancing backend scalability}
+        \resumeItem{Refactored back-end services using Python, optimizing API response times and enhancing backend scalability}
+        \resumeItem{Managed Swift-based iOS infotainment software application, achieving 98\% satisfaction rate amongst 1,000+ users}
       \resumeItemListEnd   
       
   \resumeSubHeadingListEnd
+
 
 
 %-----------PROJECTS-----------
@@ -216,13 +217,13 @@
     \resumeSubHeadingListStart
 
         \resumeProjectHeading
-          {\textbf{Policy Q/A chatbot (10000+ users) \href{https://github.com/aarya127/RAG}{\small\faIcon{github}}} $|$ Python, Angular, Falcon-40b LLM, Langchain, HuggingFace}{}
+          {\textbf{Policy Q/A chatbot (10000+ users) \href{https://github.com/aarya127/RAG}{\small\faIcon{github}}} $|$ Python, React Native, NextJS, Langchain, HuggingFace}{}
           \resumeItemListStart
             \resumeItem{Applied RAG for Q/A chatbot with ability to give quotes, check insurance coverage, and give tailored advice}
           \resumeItemListEnd
 
         \resumeProjectHeading
-          {\textbf{Pharmaceutical (iOS) App (4000+ users) \href{https://github.com/aarya127/pharmapp}{\small\faIcon{github}}} $|$ Node.js, React, HTML/CSS, Python, AWS, Nvidia LLMs}{}
+          {\textbf{Pharmaceutical (iOS) App (4000+ users) \href{https://github.com/aarya127/pharmapp}{\small\faIcon{github}}} $|$ NodeJS, React, HTML/CSS, Python, AWS, Nvidia LLMs}{}
           \resumeItemListStart
             \resumeItem{Engineered robust app using ML to read prescriptions, check coverage, corresponding price and availability}
           \resumeItemListEnd

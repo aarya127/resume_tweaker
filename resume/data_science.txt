@@ -120,7 +120,7 @@
 \section{Technical Skills}
  \begin{itemize}[leftmargin=0.15in, label={}]
     \small{\item{
-     \textbf{Languages}{: Python, SQL, R, Java, JavaScript, React, NodeJS, C, C++, Scala, Streamlit} \\
+     \textbf{Languages}{: Python, SQL, R, Java, JavaScript, Typescript, React, NodeJS, C, C++, Swift, Streamlit} \\
      \textbf{Tools}{: Azure, GCP, AWS, Snowflake, Tableau, PowerBI, Git, Kubernetes, Docker, MongoDB, PostgreSQL} \\
      \textbf{Frameworks}{: PyTorch, TensorFlow, Keras, Sklearn, Langchain, Kafka, Hadoop, Spark, DBT}
     }}
@@ -160,54 +160,54 @@
       {Globys}{April 2025 - Present}
       {Machine Learning Engineer Intern}{Seattle, WA}
       \resumeItemListStart
-        \resumeItem{Integrated active training \& fine-tuning to \textbf{7+ multi-agent RAG LLMs} using Langchain/OpenAI embeddings}
-        \resumeItem{Researched predictive models using Python (\textbf{pytorch}) for customer churn with \textbf{98\%} satisfaction from \textbf{8+ clients}}
-        \resumeItem{Utilized indexing for NoSQL (Azure) in \textbf{C\# REST APIs} to optimize backend \& reduce query latency by \textbf{70\%}}
+        \resumeItem{Integrated active training \& fine-tuning to 7+ multi-agent RAG LLMs using Langchain/OpenAI embeddings}
+        \resumeItem{Researched predictive models using Python (pytorch) for customer churn with 98\% satisfaction from 8+ clients}
+        \resumeItem{Utilized indexing for NoSQL (Azure) in C\# REST APIs to optimize backend \& reduce query latency by 70\%}
       \resumeItemListEnd   
       
     \resumeSubheading
       {Health Canada}{September 2024 -- December 2024}
       {Data Scientist Intern}{Toronto, ON}
       \resumeItemListStart 
-        \resumeItem{Enforced a \textbf{feature store in GCP} that improved machine learning model scalability \& performance by over \textbf{15\%}}
-        \resumeItem{Established time series models such as LSTM, Prophet \& XGBoost for forecasting projects with \textbf{97\%+ accuracy}}
-        \resumeItem{Conducted A/B testing to enhance experience using \textbf{React} to boost the carousel click-through rate by \textbf{25\%}}
+        \resumeItem{Enforced a feature store in GCP that improved machine learning model scalability \& performance by over 15\%}
+        \resumeItem{Established time series models such as LSTM, Prophet \& XGBoost for forecasting projects with 97\%+ accuracy}
+        \resumeItem{Conducted A/B testing to enhance experience using React to boost the carousel click-through rate by 25\%}
       \resumeItemListEnd
 
     \resumeSubheading
       {Gore Mutual Insurance}{January 2024 -- April 2024}
       {Data Scientist Intern}{Cambridge, ON}
       \resumeItemListStart 
-        \resumeItem{Implemented an \textbf{NLP model} to assess query complexities saving hosting costs by \textbf{\$500,000+} in Databricks}
-        \resumeItem{Created \textbf{5+ deep learning} projects using \textbf{neural networks} (CNN/RNNs) for projects in image/text domains}
-        \resumeItem{Deployed \textbf{20+ data pipelines (ETL) \& 10+ CI/CD workflows} to \textbf{Azure} using Python, Spark, SQL \& Git}
+        \resumeItem{Implemented an NLP model to assess query complexities saving hosting costs by \$500,000+ in Databricks}
+        \resumeItem{Created 5+ deep learning projects using neural networks (CNN/RNNs) for projects in image/text domains}
+        \resumeItem{Deployed 20+ data pipelines (ETL) \& 10+ CI/CD workflows to Azure using Python, Spark, SQL \& Git}
       \resumeItemListEnd
       
     \resumeSubheading
       {IBM}{July 2023 -- August 2023}
       {Machine Learning Engineer Intern}{New York, NY}
       \resumeItemListStart 
-        \resumeItem{Developed file processors in \textbf{C++ \& Docker} which improved RAG model performance for 10+ file types}
-        \resumeItem{Conducted \textbf{prompt tuning \& prompt engineering} on watsonx \textbf{GEN AI} models to enhance human interaction}
-        \resumeItem{Assessed design variations of pre-existing LLMs in fraud detection \& Q/A bots which \textbf{increased 3\% accuracy}}
+        \resumeItem{Developed file processors in C++ \& Docker which improved RAG model performance for 10+ file types}
+        \resumeItem{Conducted prompt tuning \& prompt engineering on watsonx GEN AI models to enhance human interaction}
+        \resumeItem{Orchestrated RAG pipeline using Langchain with Pinecone/FAISS vector stores cutting response times by 60\%}
       \resumeItemListEnd
       
     \resumeSubheading
       {RBC}{May 2023 -- August 2023}
       {Data Engineer Intern}{Mississauga, ON}
       \resumeItemListStart
-        \resumeItem{Identified various methods to transition data foundation from \textbf{DB2} to \textbf{Snowflake} to increase user flexibility}
-        \resumeItem{Accelerated data pipelines by validating 25+ data sources in \textbf{Data Lake, Kafka, Hadoop (Hive) \& SQL}}
-        \resumeItem{Led the shift of converting legacy \textbf{ETL scheduling scripts to Airflow} which resulted in better customizability}
+        \resumeItem{Identified various methods to transition data foundation from DB2 to Snowflake to increase user flexibility}
+        \resumeItem{Accelerated data pipelines by validating 25+ data sources in Data Lake, Kafka, Hadoop (Hive) \& SQL}
+        \resumeItem{Led the shift of converting legacy ETL scheduling scripts to Airflow which resulted in better customizability}
       \resumeItemListEnd
       
     \resumeSubheading
       {RBC}{May 2022 -- August 2022}
-      {Data Analyst (Software) Intern}{Mississauga, ON}
+      {Data Analyst Intern (Software)}{Mississauga, ON}
       \resumeItemListStart
-        \resumeItem{Designed a caching layer with \textbf{PostgreSQL} optimizing load times reducing latency for \textbf{4,000,000+ users}}
-        \resumeItem{Designed \textbf{15+ Tableau \& PowerBI Dashboards} \& wrote \textbf{20+ SQL queries} to influence business decisions}
-        \resumeItem{Performed \textbf{regression and logistic modeling} for statistical analysis in \textbf{R/Python scripts \& Excel (VBA)}}
+        \resumeItem{Designed a caching layer with PostgreSQL optimizing load times reducing latency for 4,000,000+ users}
+        \resumeItem{Designed 15+ Tableau \& PowerBI Dashboards \& wrote 20+ SQL queries to influence business decisions}
+        \resumeItem{Performed regression and logistic modeling for statistical analysis in R/Python scripts (pandas, numpy)}
       \resumeItemListEnd   
       
       
@@ -219,7 +219,7 @@
     \resumeSubHeadingListStart
 
         \resumeProjectHeading
-          {\textbf{Policy Q/A chatbot (10000+ users) \href{https://github.com/aarya127/RAG}{\small\faIcon{github}}} $|$ Python, Angular, Falcon-40b LLM, Langchain, HuggingFace}{}
+          {\textbf{Policy Q/A chatbot (10000+ users) \href{https://github.com/aarya127/RAG}{\small\faIcon{github}}} $|$ Python, Angular, Typescript, Langchain, HuggingFace}{}
           \resumeItemListStart
             \resumeItem{Applied RAG for Q/A chatbot with ability to give quotes, check insurance coverage, and give tailored advice}
           \resumeItemListEnd
@@ -233,7 +233,7 @@
           \resumeProjectHeading
           {\textbf{Driver Drowsiness Detection (1500+ users)         \href{https://github.com/aarya127/driver_drowsiness}{\small\faIcon{github}}} $|$ Python, CNN, Computer Vision (OpenCV)}{}
           \resumeItemListStart
-            \resumeItem{Constructed a system that processes pupil images \& attention span to detect drowsiness with correctness of \textbf{92\%}}
+            \resumeItem{Constructed a system that processes pupil images \& attention span to detect drowsiness with correctness of 92\%}
           \resumeItemListEnd 
 
         \resumeProjectHeading

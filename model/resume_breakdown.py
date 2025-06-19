@@ -49,7 +49,7 @@ missing_tech_prompt = (
 )
 
 completion = client.chat.completions.create(
-  model="deepseek-ai/deepseek-r1",
+  model="ibm/granite-3.3-8b-instruct",
   messages=[{"role":"user","content":missing_tech_prompt}],
   temperature=0.6,
   top_p=0.7,
